@@ -36,7 +36,7 @@ Path = top 3-5 by score, then ordered by level (new first).
 - Goals use only: python-programming, machine-learning, generative-ai-and-prompt-engineering, aws-cloud, data-analysis.
 - The app only displays catalog entries where lastVerified is not null.
 - Scoring treats a null field as no points for that factor, with a reason saying the detail is unknown.
-- lastVerified stays null until a human has checked the entry.
+- lastVerified is set only after the entry was checked against its live course page (AI-assisted, with human spot checks).
 - Mobile-first, works at 360px width, large tap targets.
 - Text-first, no heavy images; the app must work offline after first load.
 - Keep components small; write tests for score.ts.

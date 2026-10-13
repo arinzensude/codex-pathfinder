@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-13T11:57:15.702Z",
+  "checkedAt": "2026-10-13T12:39:41.372Z",
   "entries": 100,
   "uniqueUrls": 96,
   "totals": {
@@ -106,7 +106,7 @@
         "google-python"
       ],
       "url": "https://developers.google.com/edu/python",
-      "finalUrl": "https://developers.google.com/edu/python?hl=fa",
+      "finalUrl": "https://developers.google.com/edu/python?hl=pl",
       "status": 200,
       "outcome": "ok",
       "note": "Followed redirect; confirm destination still identifies the course."
@@ -116,7 +116,7 @@
         "google-ml-clustering"
       ],
       "url": "https://developers.google.com/machine-learning/clustering",
-      "finalUrl": "https://developers.google.com/machine-learning/clustering?hl=pt-br",
+      "finalUrl": "https://developers.google.com/machine-learning/clustering?hl=tr",
       "status": 200,
       "outcome": "ok",
       "note": "Followed redirect; confirm destination still identifies the course."
@@ -156,10 +156,10 @@
         "google-ml-framing"
       ],
       "url": "https://developers.google.com/machine-learning/problem-framing",
-      "finalUrl": "https://developers.google.com/machine-learning/problem-framing?hl=zh-cn",
+      "finalUrl": "https://developers.google.com/machine-learning/problem-framing",
       "status": 200,
       "outcome": "ok",
-      "note": "Followed redirect; confirm destination still identifies the course."
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
     },
     {
       "ids": [
@@ -505,31 +505,11 @@
       "ids": [
         "dlai-advanced-rag"
       ],
-      "url": "https://www.deeplearning.ai/alpha/short-courses/building-evaluating-advanced-rag",
-      "finalUrl": "https://www.deeplearning.ai/",
+      "url": "https://www.deeplearning.ai/courses/building-evaluating-advanced-rag",
+      "finalUrl": "https://www.deeplearning.ai/courses/building-evaluating-advanced-rag",
       "status": 200,
       "outcome": "ok",
-      "note": "Followed redirect; confirm destination still identifies the course."
-    },
-    {
-      "ids": [
-        "dlai-langchain"
-      ],
-      "url": "https://www.deeplearning.ai/alpha/short-courses/langchain-for-llm-application-development/",
-      "finalUrl": "https://www.deeplearning.ai/",
-      "status": 200,
-      "outcome": "ok",
-      "note": "Followed redirect; confirm destination still identifies the course."
-    },
-    {
-      "ids": [
-        "dlai-vector-databases"
-      ],
-      "url": "https://www.deeplearning.ai/alpha/short-courses/vector-databases-embeddings-applications",
-      "finalUrl": "https://www.deeplearning.ai/",
-      "status": 200,
-      "outcome": "ok",
-      "note": "Followed redirect; confirm destination still identifies the course."
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
     },
     {
       "ids": [
@@ -553,10 +533,30 @@
     },
     {
       "ids": [
+        "dlai-langchain"
+      ],
+      "url": "https://www.deeplearning.ai/courses/langchain",
+      "finalUrl": "https://www.deeplearning.ai/courses/langchain",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
         "dlai-chat-data"
       ],
       "url": "https://www.deeplearning.ai/courses/langchain-chat-with-your-data",
       "finalUrl": "https://www.deeplearning.ai/courses/langchain-chat-with-your-data",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "dlai-vector-databases"
+      ],
+      "url": "https://www.deeplearning.ai/courses/vector-databases-embeddings-applications",
+      "finalUrl": "https://www.deeplearning.ai/courses/vector-databases-embeddings-applications",
       "status": 200,
       "outcome": "ok",
       "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."

@@ -1,6 +1,6 @@
 # Catalog link report
 
-Checked at: 2026-10-13T11:57:15.702Z
+Checked at: 2026-10-13T12:39:41.372Z
 
 100 entries; 96 unique URLs requested with GET. Shared launchers are checked once for all associated entries.
 
@@ -22,12 +22,12 @@ HTTP 403 is **blocked, check manually**, never broken. Network/TLS/timeouts, HTT
 | cs50-python | 200 | ok | [course](https://cs50.harvard.edu/python/) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | cs50-r | 200 | ok | [course](https://cs50.harvard.edu/r/) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | cs50-sql | 200 | ok | [course](https://cs50.harvard.edu/sql/) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
-| google-python | 200 | ok | [course](https://developers.google.com/edu/python) | [destination](https://developers.google.com/edu/python?hl=fa) — Followed redirect; confirm destination still identifies the course. |
-| google-ml-clustering | 200 | ok | [course](https://developers.google.com/machine-learning/clustering) | [destination](https://developers.google.com/machine-learning/clustering?hl=pt-br) — Followed redirect; confirm destination still identifies the course. |
+| google-python | 200 | ok | [course](https://developers.google.com/edu/python) | [destination](https://developers.google.com/edu/python?hl=pl) — Followed redirect; confirm destination still identifies the course. |
+| google-ml-clustering | 200 | ok | [course](https://developers.google.com/machine-learning/clustering) | [destination](https://developers.google.com/machine-learning/clustering?hl=tr) — Followed redirect; confirm destination still identifies the course. |
 | google-ml-crash | 200 | ok | [course](https://developers.google.com/machine-learning/crash-course/) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | google-decision-forests | 200 | ok | [course](https://developers.google.com/machine-learning/decision-forests) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | google-intro-ml | 200 | ok | [course](https://developers.google.com/machine-learning/intro-to-ml) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
-| google-ml-framing | 200 | ok | [course](https://developers.google.com/machine-learning/problem-framing) | [destination](https://developers.google.com/machine-learning/problem-framing?hl=zh-cn) — Followed redirect; confirm destination still identifies the course. |
+| google-ml-framing | 200 | ok | [course](https://developers.google.com/machine-learning/problem-framing) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | google-recommendations | 200 | ok | [course](https://developers.google.com/machine-learning/recommendation) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | hf-agents | 200 | ok | [course](https://huggingface.co/learn/agents-course/en/unit0/introduction) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | hf-llm | 200 | ok | [course](https://huggingface.co/learn/llm-course/en/chapter1/1) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
@@ -62,12 +62,12 @@ HTTP 403 is **blocked, check manually**, never broken. Network/TLS/timeouts, HTT
 | coursera-aws-technical | 200 | ok | [course](https://www.coursera.org/learn/aws-cloud-technical-essentials) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | coursera-aws-migrating | 200 | ok | [course](https://www.coursera.org/learn/aws-fundamentals-migrating-to-the-cloud?specialization=aws-fundamentals) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | google-data-foundations | 200 | ok | [course](https://www.coursera.org/learn/foundations-data) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
-| dlai-advanced-rag | 200 | ok | [course](https://www.deeplearning.ai/alpha/short-courses/building-evaluating-advanced-rag) | [destination](https://www.deeplearning.ai/) — Followed redirect; confirm destination still identifies the course. |
-| dlai-langchain | 200 | ok | [course](https://www.deeplearning.ai/alpha/short-courses/langchain-for-llm-application-development/) | [destination](https://www.deeplearning.ai/) — Followed redirect; confirm destination still identifies the course. |
-| dlai-vector-databases | 200 | ok | [course](https://www.deeplearning.ai/alpha/short-courses/vector-databases-embeddings-applications) | [destination](https://www.deeplearning.ai/) — Followed redirect; confirm destination still identifies the course. |
+| dlai-advanced-rag | 200 | ok | [course](https://www.deeplearning.ai/courses/building-evaluating-advanced-rag) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | dlai-prompt | 200 | ok | [course](https://www.deeplearning.ai/courses/chatgpt-prompt-eng) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | dlai-evaluate-genai | 200 | ok | [course](https://www.deeplearning.ai/courses/evaluating-debugging-generative-ai) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
+| dlai-langchain | 200 | ok | [course](https://www.deeplearning.ai/courses/langchain) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | dlai-chat-data | 200 | ok | [course](https://www.deeplearning.ai/courses/langchain-chat-with-your-data) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
+| dlai-vector-databases | 200 | ok | [course](https://www.deeplearning.ai/courses/vector-databases-embeddings-applications) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | fcc-data-analysis | 200 | ok | [course](https://www.freecodecamp.org/learn/data-analysis-with-python) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | fcc-python | 200 | ok | [course](https://www.freecodecamp.org/learn/python-v9) | HTTP reachability only; a 200 response does not verify course content or enrollment. |
 | fcc-scientific-python | 200 | ok | [course](https://www.freecodecamp.org/learn/scientific-computing-with-python) | HTTP reachability only; a 200 response does not verify course content or enrollment. |

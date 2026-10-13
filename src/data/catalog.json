@@ -14,7 +14,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Page states no coding experience, estimated 5 hours and no cost; Python exercises.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-python",
@@ -31,7 +31,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Page lists Intro to Programming prerequisite, estimated 5 hours and no cost.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "cs50-python",
@@ -48,7 +48,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Page welcomes learners without prior programming experience and explicitly offers free OpenCourseWare; ten weeks is not an hour estimate.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "google-python",
@@ -65,7 +65,7 @@
     "language": "en",
     "format": "text",
     "sourceNote": "Page explicitly says free class for people with a little programming experience; written lessons, videos and exercises. Two days not converted to hours.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "helsinki-python-intro",
@@ -116,7 +116,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Course page states little to no programming experience, Python 3, lecture videos and assignments; page does not state an hour estimate or fee.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fcc-python",
@@ -133,7 +133,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Page teaches Python fundamentals through labs, workshops, quizzes and five projects; no hour estimate or explicit price in retrieved course page.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fcc-scientific-python",
@@ -150,7 +150,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Page starts with fundamental programming and interactive projects. Content remains available but is no longer updated. Hours and price not stated.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fcc-intermediate-python",
@@ -167,7 +167,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Official course announcement explicitly states free six-hour intermediate video course; covers generators, threading and context managers.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-python-fundamentals",
@@ -184,7 +184,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Learning path page lists Beginner, 3 hr 12 min and four modules with coding exercises. Fee not explicitly stated on retrieved page.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "cisco-python-1",
@@ -201,7 +201,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page identifies Python Essentials 1. Official linked catalog https://www.netacad.com/catalogs/learn?courseLang=en-US lists Beginner, 30 hours, Free; course exercises.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "cisco-python-2",
@@ -218,7 +218,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page identifies Python Essentials 2. Official catalog https://www.netacad.com/catalogs/learn?courseLang=en-US lists Intermediate, 40 hours, Free; course exercises.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "py4e",
@@ -235,7 +235,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Author's course page explicitly offers free materials, lectures, book, autograded assignments and badges. No learner level or hours stated.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-python-bases",
@@ -252,7 +252,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French page states Facile, 6 heures, cours en libre accès and intended for learners who have never coded; written lessons, quizzes, optional video.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-python-oop",
@@ -269,7 +269,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French page lists Moyenne, 12 heures, cours en libre accès; requires basic Python and teaches classes/inheritance.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-python-fundamentals",
@@ -286,7 +286,7 @@
     "language": "fr",
     "format": "video",
     "sourceNote": "Page lists Français, effort 81 heures and accès gratuit; expects computing/algorithm familiarity, uses short videos, notebooks and exercises. Supports both experienced programmers and prepared beginners.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-python-code",
@@ -303,7 +303,7 @@
     "language": "fr",
     "format": "video",
     "sourceNote": "Page lists Français, effort 120 heures, few prerequisites, Python 3 and intensive practice. Retrieved page does not establish course fee.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "udemy-python-deep-dive",
@@ -321,7 +321,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Course page: rating 4.9/5 from 13,577 ratings; English, 45h 48m; requires basic Python. Udemy course variant https://persistent.udemy.com/course/python-3-deep-dive-part-1/ shows paid purchase/sale; confirm checkout manually.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "udemy-python-automate",
@@ -333,12 +333,13 @@
     ],
     "level": "new",
     "hours": 9.5,
-    "cost": null,
+    "cost": "paid",
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: rating 4.7/5 from 119,653 ratings; English, 9h 30m, no programming experience required. Price not exposed in retrieved page; do not assume free access to course from free book.",
-    "lastVerified": null
+    "sourceNote": "Udemy page re-checked 2026-10-13 in a browser (the link checker gets 403). Rating 4.7/5 from 119,653 ratings; English; curriculum \"9h 30m total length\" (the header badge says 5 hours, so the curriculum figure is used); description says it is for complete beginners. Page shows a purchase price (visitor currency, not recorded), so cost is paid.",
+    "lastVerified": "2026-10-13",
+    "priceNote": "Price varies; frequent sales"
   },
   {
     "id": "kaggle-intro-ml",
@@ -355,7 +356,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page: estimated 3 hours, no cost, builds on Python; first models, validation and random forests.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-intermediate-ml",
@@ -372,7 +373,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page: Intermediate title, 4 estimated hours, no cost; builds on Intro to Machine Learning and Pandas.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-feature-engineering",
@@ -389,7 +390,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page: 5 estimated hours, no cost; prerequisite Intermediate Machine Learning, exercises on features and PCA.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-deep-learning",
@@ -406,7 +407,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page: 4 estimated hours, no cost; builds on Intro to Machine Learning, TensorFlow/Keras exercises.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-computer-vision",
@@ -423,7 +424,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page: 4 estimated hours, no cost; prerequisite Intro to Deep Learning, convolutional neural networks and augmentation.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "google-intro-ml",
@@ -474,7 +475,7 @@
     "language": "en",
     "format": "text",
     "sourceNote": "Course page: estimated 45 minutes, choosing ML solutions and success metrics. Learner level and fee not explicitly stated.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "google-ml-clustering",
@@ -542,7 +543,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Page explicitly says free course for people with coding experience; a year of coding and high-school math sufficient. Nine lessons around 90 minutes each; no exact overall hours used.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "cs50-ai",
@@ -559,7 +560,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Page offers free OpenCourseWare; prerequisite CS50x or one year Python; projects include classification and machine learning. Seven weeks not converted to hours.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fcc-tensorflow",
@@ -576,7 +577,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Official course page explicitly offers free seven-hour TensorFlow 2.0 video course for Python programmers seeking ML/AI skills; includes Colab notebooks.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "inria-scikit-learn",
@@ -610,7 +611,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French course page: Moyenne, 10 heures, cours en libre accès; requires Python data libraries, algebra and statistics.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-ml-supervised",
@@ -627,7 +628,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French course page: Moyenne, 10 heures, cours en libre accès; requires solid Python, data analysis and Jupyter; evaluation, optimization and deployment.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "building-ai",
@@ -644,7 +645,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course overview: Basic Understanding, approximately 50 hours, free online course with optional paid certificate; ML and neural networks, three exercise difficulty levels.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-ml-concepts",
@@ -661,7 +662,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Module page: Beginner, 1 hr 33 min, basic math prerequisite; training, evaluating ML and deep learning. Fee unstated.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "udemy-ml-az",
@@ -673,12 +674,13 @@
     ],
     "level": "new",
     "hours": 49.2333,
-    "cost": null,
+    "cost": "paid",
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: rating 4.5/5 from 206,457 ratings; English, 49h 14m; high-school math only, beginners welcomed; AWS, Python/R model building. Price not exposed, cost remains unknown.",
-    "lastVerified": null
+    "sourceNote": "Udemy page re-checked 2026-10-13 in a browser (the link checker gets 403). Rating 4.5/5 from 206,457 ratings; English; curriculum 49h 14m; description targets students with at least high-school math who want to start learning ML; AWS, Python and R model building. Page shows a purchase price (visitor currency, not recorded), so cost is paid.",
+    "lastVerified": "2026-10-13",
+    "priceNote": "Price varies; frequent sales"
   },
   {
     "id": "dlai-prompt",
@@ -696,25 +698,25 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Public course page fetched 2026-10-13: Beginner, 1h40m, nine videos/seven code examples, basic Python required, free access for limited beta period; optional PRO assessment/accomplishment. Earlier web retrieval was blocked; public GET later succeeded.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "dlai-langchain",
     "title": "LangChain for LLM Application Development",
     "provider": "DeepLearning.AI / LangChain",
-    "url": "https://www.deeplearning.ai/alpha/short-courses/langchain-for-llm-application-development/",
+    "url": "https://www.deeplearning.ai/courses/langchain",
     "goals": [
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": 1.6333,
+    "hours": 1.8,
     "cost": "free",
     "priceNote": "Free for a limited time during platform beta; optional PRO features",
     "dataWeight": "medium",
     "language": "en",
     "format": "video",
-    "sourceNote": "Indexed course page lists Beginner, 1 Hour 38 Minutes, video/code lessons and free access for limited beta period; basic Python helpful.",
-    "lastVerified": null
+    "sourceNote": "DeepLearning.AI course page re-checked 2026-10-13: Beginner, 1h48m; basic Python helpful; 8 video lessons, 6 code examples, 1 graded assignment. Moved from /alpha/short-courses/ to /courses/langchain. Course access is free for a limited time during the platform beta; PRO accomplishment optional.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "dlai-chat-data",
@@ -725,14 +727,14 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": 1.1333,
+    "hours": 1.3,
     "cost": "free",
     "priceNote": "Free for a limited time during platform beta; optional PRO features",
     "dataWeight": "medium",
     "language": "en",
     "format": "video",
-    "sourceNote": "Indexed course page lists Beginner, 1h8m, eight video lessons and code examples, free access for limited beta period; PRO graded assignment optional.",
-    "lastVerified": null
+    "sourceNote": "DeepLearning.AI course page re-checked 2026-10-13: Beginner, 1h18m; aimed at developers familiar with Python; 8 video lessons and code examples. Course access is free for a limited time during the platform beta; PRO accomplishment optional.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "dlai-evaluate-genai",
@@ -743,50 +745,50 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "intermediate",
-    "hours": 0.8333,
+    "hours": 1,
     "cost": "free",
     "priceNote": "Free for a limited time during platform beta; optional PRO features",
     "dataWeight": "medium",
     "language": "en",
     "format": "video",
-    "sourceNote": "Indexed course page lists Intermediate, 50m, seven video lessons, requires Python/PyTorch familiarity; free access for limited beta period, PRO accomplishment optional.",
-    "lastVerified": null
+    "sourceNote": "DeepLearning.AI course page re-checked 2026-10-13: Intermediate, 1h; requires Python and PyTorch familiarity; 7 video lessons, 5 code examples. Course access is free for a limited time during the platform beta; PRO accomplishment optional.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "dlai-vector-databases",
     "title": "Vector Databases: from Embeddings to Applications",
     "provider": "DeepLearning.AI / Weaviate",
-    "url": "https://www.deeplearning.ai/alpha/short-courses/vector-databases-embeddings-applications",
+    "url": "https://www.deeplearning.ai/courses/vector-databases-embeddings-applications",
     "goals": [
       "generative-ai-and-prompt-engineering"
     ],
     "level": "intermediate",
-    "hours": 0.9167,
+    "hours": 1.0833,
     "cost": "free",
     "priceNote": "Free for a limited time during platform beta; optional PRO features",
     "dataWeight": "medium",
     "language": "en",
     "format": "video",
-    "sourceNote": "Indexed course page lists Intermediate, 55 Minutes, video/code lessons, free access for limited beta period; semantic search and RAG.",
-    "lastVerified": null
+    "sourceNote": "DeepLearning.AI course page re-checked 2026-10-13: Intermediate, 1h5m; semantic search and RAG; 8 video lessons. Moved from /alpha/short-courses/ to /courses/. Course access is free for a limited time during the platform beta; PRO accomplishment optional.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "dlai-advanced-rag",
     "title": "Building and Evaluating Advanced RAG",
     "provider": "DeepLearning.AI / LlamaIndex / TruEra",
-    "url": "https://www.deeplearning.ai/alpha/short-courses/building-evaluating-advanced-rag",
+    "url": "https://www.deeplearning.ai/courses/building-evaluating-advanced-rag",
     "goals": [
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": 1.9167,
+    "hours": 2.0833,
     "cost": "free",
     "priceNote": "Free for a limited time during platform beta; optional PRO features",
     "dataWeight": "medium",
     "language": "en",
     "format": "video",
-    "sourceNote": "Indexed course page lists Beginner (despite Advanced title), 1 Hour 55 Minutes, basic Python prerequisite, free access for limited beta period.",
-    "lastVerified": null
+    "sourceNote": "DeepLearning.AI course page re-checked 2026-10-13: Beginner (despite the Advanced title), 2h5m; basic Python knowledge; 6 video lessons, 4 code examples, 1 graded assignment. Moved from /alpha/short-courses/ to /courses/. Course access is free for a limited time during the platform beta; PRO accomplishment optional.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "hf-llm",
@@ -803,7 +805,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page explicitly says completely free; requires good Python, best after introductory deep learning. Chapters include fine-tuning/transformers; 6–8 hours per chapter not an exact total.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "hf-agents",
@@ -820,7 +822,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Page explicitly says free course and free certification; basic Python and LLM knowledge required; hands-on agents. Weekly 3–4 hour range not converted to exact total.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "hf-smol",
@@ -837,7 +839,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Page says free course; requires Python, ML fundamentals, PyTorch experience and transformer basics; LLM fine-tuning, preference alignment. No exact overall hours.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-genai-intro",
@@ -848,13 +850,13 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": null,
+    "hours": 0.6167,
     "cost": null,
     "dataWeight": "low",
     "language": "en",
     "format": "interactive",
-    "sourceNote": "Module page lists Beginner, LLMs, prompts, agents and exercise; requires basic AI/ML familiarity. Retrieved module duration and fee absent.",
-    "lastVerified": null
+    "sourceNote": "Microsoft Learn page re-checked 2026-10-13: Module lists Beginner, 37 min, prerequisites are familiarity with AI concepts and basic machine learning principles; LLMs, prompts, agents and an exercise. No fee stated on the page.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-effective-prompts",
@@ -865,13 +867,13 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": null,
+    "hours": 0.4833,
     "cost": null,
     "dataWeight": "low",
     "language": "en",
     "format": "text",
-    "sourceNote": "Module page lists Beginner, prompt context/goals/sources/expectations and personalization; Microsoft 365 familiarity expected. Hours and fee absent.",
-    "lastVerified": null
+    "sourceNote": "Microsoft Learn page re-checked 2026-10-13: Module lists Beginner, 29 min, prerequisite is familiarity with Microsoft 365; prompt context, goals, sources, expectations and personalization. No fee stated on the page.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-explore-genai",
@@ -882,13 +884,13 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": null,
+    "hours": 0.6167,
     "cost": null,
     "dataWeight": "low",
     "language": "en",
     "format": "text",
-    "sourceNote": "Module page lists Beginner and covers generative AI, NLP/NLG/LLMs and Copilot creativity. Duration and fee absent.",
-    "lastVerified": null
+    "sourceNote": "Microsoft Learn page re-checked 2026-10-13: Module lists Beginner, 37 min, prerequisite is a basic understanding of AI concepts; covers generative AI, NLP/NLG/LLMs and Copilot creativity. No fee stated on the page.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-copilot-start",
@@ -899,13 +901,13 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": null,
+    "hours": 0.5167,
     "cost": null,
     "dataWeight": "low",
     "language": "en",
     "format": "text",
-    "sourceNote": "Module page lists Beginner; GPT fundamentals, effective prompts and feedback. Duration and fee absent.",
-    "lastVerified": null
+    "sourceNote": "Microsoft Learn page re-checked 2026-10-13: Module lists Beginner, 31 min, no prerequisites; GPT fundamentals, effective prompts and feedback. No fee stated on the page.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-copilot-productivity",
@@ -916,13 +918,13 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": null,
+    "hours": 0.75,
     "cost": null,
     "dataWeight": "low",
     "language": "en",
     "format": "text",
-    "sourceNote": "Module page lists Beginner and covers productivity, drafts and RAG. Duration and fee absent; product license requirements must be checked separately.",
-    "lastVerified": null
+    "sourceNote": "Microsoft Learn page re-checked 2026-10-13: Module lists Beginner, 45 min, no prerequisites; productivity, drafts and RAG. Product license requirements must be checked separately. No fee stated on the page.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-genai-apps",
@@ -933,13 +935,13 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "intermediate",
-    "hours": null,
+    "hours": 6.8667,
     "cost": null,
     "dataWeight": "low",
     "language": "en",
     "format": "interactive",
-    "sourceNote": "Learning path page lists Intermediate, programming experience and fundamental Azure AI prerequisites; model deployment, evaluation and apps. Hours/fee absent; Azure exercises may incur charges.",
-    "lastVerified": null
+    "sourceNote": "Microsoft Learn page re-checked 2026-10-13: Learning path lists Intermediate, 6 hr 52 min, prerequisites are fundamental AI concepts and services in Azure plus programming experience; model deployment, evaluation and apps. Azure exercises may incur charges. No fee stated on the page.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-chatgpt",
@@ -956,7 +958,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French course page lists Facile, 2 heures and cours en libre accès; prompt engineering, text generation and productivity.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-ai-learning",
@@ -973,7 +975,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French course page lists Facile, 6 heures and cours en libre accès; critically use generated content, create exercises/documents; ChatGPT familiarity helpful.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-ms-ai-fluency",
@@ -984,13 +986,13 @@
       "generative-ai-and-prompt-engineering"
     ],
     "level": "new",
-    "hours": null,
+    "hours": 4.6333,
     "cost": null,
     "dataWeight": "low",
     "language": "fr",
     "format": "text",
-    "sourceNote": "French learning path page lists Débutant and seven modules, including generative AI, prompting/search and Copilot. Hours and fee absent.",
-    "lastVerified": null
+    "sourceNote": "Microsoft Learn page re-checked 2026-10-13: French learning path lists Débutant, 4 h 38 min, seven modules including generative AI, prompting/search and Copilot. No fee stated on the page.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-genai-intensive",
@@ -1007,7 +1009,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Official Kaggle guide identified in course index https://www.kaggle.com/learn/ ; self-paced GenAI foundations. Course guide client-rendered; fee, total hours and learner level not established from guide. Google launch describes live course as free, not assumed for all guide services.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "udemy-prompt-bootcamp",
@@ -1019,12 +1021,13 @@
     ],
     "level": "basics",
     "hours": 20.0667,
-    "cost": null,
+    "cost": "paid",
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Current course page: rating 4.5/5 from 166,428 ratings; English, 20h 4m, Python Coding Required. Prompt principles and AI application projects. Price not exposed; cost remains unknown.",
-    "lastVerified": null
+    "sourceNote": "Udemy page re-checked 2026-10-13 in a browser (the link checker gets 403). Rating 4.5/5 from 166,428 ratings; English; curriculum 20h 4m; page warns most lessons require reading and modifying Python code. Page shows a purchase price (visitor currency, not recorded), so cost is paid.",
+    "lastVerified": "2026-10-13",
+    "priceNote": "Price varies; frequent sales"
   },
   {
     "id": "aws-educate-storage",
@@ -1143,7 +1146,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Official plan page explicitly says designed for beginners, self-paced courses covering core services, pricing/security. Course selection via linked Skill Builder launcher; total hours and current fee unstated.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "aws-cloud-quest",
@@ -1176,7 +1179,7 @@
     "dataWeight": "medium",
     "language": "en",
     "format": "video",
-    "sourceNote": "Current course page: rating 4.8/5 from 1,306 ratings; English, 50m total; explicitly Free course and introductory service overview. Older search snapshot differed; current page figures used.",
+    "sourceNote": "Udemy page re-checked 2026-10-13 in a browser (the link checker gets 403). Rating 4.8/5 from 9,341 ratings; English; curriculum 50m total length; price shows Free; description calls it a high-level overview and not hands-on. The page states no learner level, so level new is unconfirmed.",
     "lastVerified": null
   },
   {
@@ -1189,12 +1192,13 @@
     ],
     "level": "new",
     "hours": 27.2333,
-    "cost": null,
+    "cost": "paid",
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: rating 4.7/5 from 299,306 ratings; English, 27h 14m, IT basics required, no AWS experience needed. Price not exposed in retrieved page; cost unknown.",
-    "lastVerified": null
+    "sourceNote": "Udemy page re-checked 2026-10-13 in a browser (the link checker gets 403). Rating 4.7/5 from 299,306 ratings; English; curriculum 27h 14m; page says beginners are welcome and no AWS knowledge is needed. Page shows a purchase price (visitor currency, not recorded), so cost is paid.",
+    "lastVerified": "2026-10-13",
+    "priceNote": "Price varies; frequent sales"
   },
   {
     "id": "udemy-aws-developer",
@@ -1206,12 +1210,13 @@
     ],
     "level": "basics",
     "hours": 31.5333,
-    "cost": null,
+    "cost": "paid",
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: rating 4.7/5 from 124,634 ratings; English, 31h 32m; requires programming basics (functions/CLI/JSON), no AWS experience necessary. Fee absent; cloud exercises may incur charges.",
-    "lastVerified": null
+    "sourceNote": "Udemy page re-checked 2026-10-13 in a browser (the link checker gets 403). Rating 4.7/5 from 124,634 ratings; English; curriculum 31h 32m (the header badge says 5 hours, so the curriculum figure is used); page says no AWS knowledge is needed, and the catalog level basics reflects the programming basics the course expects. Cloud exercises may incur charges. Page shows a purchase price (visitor currency, not recorded), so cost is paid.",
+    "lastVerified": "2026-10-13",
+    "priceNote": "Price varies; frequent sales"
   },
   {
     "id": "fcc-aws-bootcamp",
@@ -1228,7 +1233,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Official course announcement explicitly says free, 107-hour video; intended for learners with associate certification or cloud work experience; projects, containers, CI/CD. Cloud usage separate from free video access.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fcc-aws-ccp",
@@ -1245,7 +1250,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Current course page says free 14-hour CLF-C02 course, despite legacy 13-hour URL. Course-level learner prerequisite not clearly stated; exam fees excluded.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fcc-aws-developer",
@@ -1279,7 +1284,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French course page: Moyenne, 12 heures, cours en libre accès; requires web development and command-line knowledge, EC2/RDS/S3 exercises. AWS resources billed separately.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-aws-essentials",
@@ -1296,7 +1301,7 @@
     "language": "fr",
     "format": "video",
     "sourceNote": "French course page says Débutant, Gratuit, 38 lessons, labs and quizzes; instructor describes prior senior architect/manager role at AWS France. No course hours stated. Independent provider, not AWS Skill Builder.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "coursera-aws-technical",
@@ -1307,13 +1312,13 @@
       "aws-cloud"
     ],
     "level": "new",
-    "hours": 20,
+    "hours": null,
     "cost": null,
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: Beginner, English, 2 weeks at 10 hours/week (20 hours arithmetic); no AWS knowledge required, technical background expected. Enroll for free does not establish full free audit; check enrollment options and cost.",
-    "lastVerified": null
+    "sourceNote": "Coursera page re-checked 2026-10-13: Beginner level, English; pace shown as \"2 weeks at 10 hours a week\", no total hours stated, so hours is null; no AWS knowledge required. \"Enroll for free\" and a subscription banner do not establish full free audit; cost left null.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "coursera-aws-practitioner",
@@ -1324,13 +1329,13 @@
       "aws-cloud"
     ],
     "level": "new",
-    "hours": 40,
+    "hours": null,
     "cost": null,
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: Beginner, taught English, 4 weeks at 10 hours/week (40 hours arithmetic), core cloud concepts. Access fee/free audit not established; check checkout. Separate platform edition from Skill Builder.",
-    "lastVerified": null
+    "sourceNote": "Coursera page re-checked 2026-10-13: Beginner level; pace shown as \"4 weeks at 10 hours a week\", no total hours stated, so hours is null; core cloud concepts. Fee or free audit not established; cost left null. Separate platform edition from Skill Builder.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "coursera-aws-migrating",
@@ -1347,7 +1352,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Course page explicitly lists Intermediate, 7 hours, taught English, related experience required. Parent specialization says it cannot be taken free; individual audit/access cost unconfirmed, financial aid conditional.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "coursera-aws-architecting",
@@ -1358,13 +1363,13 @@
       "aws-cloud"
     ],
     "level": "intermediate",
-    "hours": 20,
+    "hours": null,
     "cost": null,
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: Intermediate, taught English, 2 weeks at 10 hours/week (20 hours arithmetic), related experience required; AWS architecture use cases. Parent specialization fee is required; individual audit/cost unconfirmed.",
-    "lastVerified": null
+    "sourceNote": "Coursera page re-checked 2026-10-13: Intermediate level; pace shown as \"2 weeks at 10 hours a week\", no total hours stated, so hours is null; related experience required; AWS architecture use cases. Parent specialization fee is required; individual audit/cost not established, so cost is null.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-pandas",
@@ -1381,7 +1386,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Indexed course page: builds on Python, 4 estimated hours, no cost; notebooks/exercises on grouping, combining and summarizing data.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-data-viz",
@@ -1398,7 +1403,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Indexed course page: 4 estimated hours, no cost; Seaborn, charts and final project. No explicit learner level/prerequisites captured.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-sql-intro",
@@ -1408,14 +1413,14 @@
     "goals": [
       "data-analysis"
     ],
-    "level": null,
+    "level": "basics",
     "hours": 3,
     "cost": "free",
     "dataWeight": "low",
     "language": "en",
     "format": "interactive",
-    "sourceNote": "Course page: 3 estimated hours, no cost, SQL/BigQuery query exercises. Introductory topic but no explicit learner level captured.",
-    "lastVerified": null
+    "sourceNote": "Kaggle page re-checked 2026-10-13: 3 estimated hours, no cost, SQL/BigQuery query exercises; \"Builds on Python\" (level basics) and is preparation for Advanced SQL.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-sql-advanced",
@@ -1432,7 +1437,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page: 4 estimated hours, no cost, prerequisite Intro to SQL. Advanced title not automatically mapped to intermediate; analytic functions and efficient queries.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-data-cleaning",
@@ -1449,7 +1454,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Indexed course page: 4 estimated hours, no cost, builds on Pandas; missing values, normalization, dates, encoding and inconsistent entries.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-time-series",
@@ -1466,7 +1471,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Indexed course page: 5 estimated hours, no cost, prerequisite Intermediate Machine Learning; regression, trend, seasonality, hybrid forecasting.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "kaggle-geospatial",
@@ -1476,14 +1481,14 @@
     "goals": [
       "data-analysis"
     ],
-    "level": null,
+    "level": "basics",
     "hours": 4,
     "cost": "free",
     "dataWeight": "low",
     "language": "en",
     "format": "interactive",
-    "sourceNote": "Indexed official course page: 4 hours, no cost; interactive maps and spatial patterns. Course-level prerequisite/level not captured.",
-    "lastVerified": null
+    "sourceNote": "Kaggle page re-checked 2026-10-13: 4 estimated hours, no cost; interactive maps and spatial patterns; \"Builds on Pandas\" (level basics).",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fcc-data-analysis",
@@ -1500,7 +1505,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Course page teaches analysis with NumPy, Pandas, Matplotlib and Seaborn, videos and projects. Content no longer updated. Total hours, fee and learner level not stated; free sign-in is not a course-price statement.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "ms-python-data-analysis",
@@ -1511,13 +1516,13 @@
       "data-analysis"
     ],
     "level": "intermediate",
-    "hours": null,
+    "hours": 1,
     "cost": null,
     "dataWeight": "low",
     "language": "en",
     "format": "interactive",
-    "sourceNote": "Module page and official training index label Intermediate; NumPy/Pandas/Matplotlib analysis exercises. Retrieved module hours and fee absent.",
-    "lastVerified": null
+    "sourceNote": "Microsoft Learn page re-checked 2026-10-13: Intermediate, 1 hr, 9 units; prerequisites are basic mathematics, some Python programming experience and Jupyter familiarity; NumPy/Pandas/Matplotlib analysis. No fee stated on the page.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "cs50-sql",
@@ -1534,7 +1539,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Official course page fetched 2026-10-13 explicitly offers free OpenCourseWare with lecture videos and problem sets; seven weeks not converted to hours. Learner level not explicitly established. Databases and SQL queries.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "cs50-r",
@@ -1551,7 +1556,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Official course page fetched 2026-10-13 explicitly offers free OpenCourseWare with lecture videos and problem sets; seven weeks not converted to hours. Learner level not explicitly established. R programming and statistical computing.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "mit-computational-data",
@@ -1568,7 +1573,7 @@
     "language": "en",
     "format": "video",
     "sourceNote": "Course page explicitly follows 6.0001 Python course, uses Python 3.5, lecture videos and assignments. Overall hours and course fee unstated; legacy tools require human relevance review.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "cisco-data-analytics",
@@ -1585,7 +1590,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Course page: Free, 30 Hours, beginner/Débutant, 29 labs; English teaching, Excel, SQL, Tableau and portfolio projects.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "cisco-data-science-python",
@@ -1602,7 +1607,7 @@
     "language": "en",
     "format": "interactive",
     "sourceNote": "Official course page identifies course. Official catalog https://www.netacad.com/catalogs/learn?courseLang=en-US lists Intermediate, 40 hours, Free; hands-on Pandas/Matplotlib projects.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-python-analysis",
@@ -1619,7 +1624,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French course page: Facile, 6 heures, cours en libre accès; Python foundations and practical exercises for data analysis.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-python-data-libraries",
@@ -1636,7 +1641,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French course page: Moyenne, 8 heures, cours en libre accès; NumPy arrays, Pandas data frames, Matplotlib/Seaborn; basic Python recommended.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "fr-statistical-tests",
@@ -1653,7 +1658,7 @@
     "language": "fr",
     "format": "text",
     "sourceNote": "French course page: Moyenne, 12 heures, cours en libre accès; qualitative/quantitative statistical tests in Python, requires Python data analysis.",
-    "lastVerified": null
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "udemy-data-science-python",
@@ -1665,12 +1670,13 @@
     ],
     "level": "basics",
     "hours": 24.9,
-    "cost": null,
+    "cost": "paid",
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: rating 4.5/5 from 161,030 ratings; English, 24h 54m, some programming experience required; NumPy/Pandas/viz/ML. Price not exposed; updated May 2020, review legacy dependencies.",
-    "lastVerified": null
+    "sourceNote": "Udemy page re-checked 2026-10-13 in a browser (the link checker gets 403). Rating 4.5/5 from 161,030 ratings; English; curriculum 24h 54m; description is for beginners with some programming experience or experienced developers; NumPy/Pandas/viz/ML; older course content, so review legacy dependencies. Page shows a purchase price (visitor currency, not recorded), so cost is paid.",
+    "lastVerified": "2026-10-13",
+    "priceNote": "Price varies; frequent sales"
   },
   {
     "id": "udemy-excel",
@@ -1687,8 +1693,8 @@
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: rating 4.7/5 from 545,852 ratings; English, 22h 53m, no prior Excel knowledge required. Udemy variant https://endava.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/ exposes paid purchase price; Excel software separately required.",
-    "lastVerified": null
+    "sourceNote": "Udemy page re-checked 2026-10-13 in a browser (the link checker gets 403). Rating 4.7/5 from 545,852 ratings (the 2026 edition); English; instructor Kyle Pew; curriculum 22h 53m; described as a beginner-to-expert path (no explicit \"no prior knowledge\" statement). Excel software separately required. Page shows a purchase price (visitor currency, not recorded), so cost is paid.",
+    "lastVerified": "2026-10-13"
   },
   {
     "id": "google-data-foundations",
@@ -1699,12 +1705,12 @@
       "data-analysis"
     ],
     "level": "new",
-    "hours": 10,
+    "hours": null,
     "cost": null,
     "dataWeight": "high",
     "language": "en",
     "format": "video",
-    "sourceNote": "Course page: Beginner, taught English, 1 week at 10 hours/week (10 hours arithmetic); foundational data analysis. Full free audit or actual fee not established; enrollment/free trial is not proof of free full access.",
-    "lastVerified": null
+    "sourceNote": "Coursera page re-checked 2026-10-13: Beginner level; pace shown as \"1 week at 10 hours a week\", no total hours stated, so hours is null; foundational data analysis. Page shows \"Enroll for free\" and a free trial, which is not proof of free full access; cost left null.",
+    "lastVerified": "2026-10-13"
   }
 ]
