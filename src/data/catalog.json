@@ -1,0 +1,34 @@
+[
+  {
+    "id": "placeholder-1",
+    "title": "",
+    "provider": "",
+    "url": "",
+    "goals": [],
+    "level": null,
+    "hours": null,
+    "cost": null,
+    "priceNote": "",
+    "dataWeight": null,
+    "language": null,
+    "format": null,
+    "sourceNote": "TODO: Replace this placeholder with sourced course details. No course page checked.",
+    "lastVerified": null
+  },
+  {
+    "id": "placeholder-2",
+    "title": "",
+    "provider": "",
+    "url": "",
+    "goals": [],
+    "level": null,
+    "hours": null,
+    "cost": null,
+    "priceNote": "",
+    "dataWeight": null,
+    "language": null,
+    "format": null,
+    "sourceNote": "TODO: Replace this placeholder with sourced course details. No course page checked.",
+    "lastVerified": null
+  }
+]
