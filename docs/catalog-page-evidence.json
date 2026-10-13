@@ -1,0 +1,69 @@
+[
+  {
+    "id": "cs50-sql",
+    "url": "https://cs50.harvard.edu/sql/",
+    "status": 200,
+    "checkedAt": "2026-10-13T11:58:17.748Z",
+    "snippets": [
+      "ptimizing Scaling Final Project Academic Honesty CS50 Certificate FAQs Gradebook Staff Apple TV edX freeCodeCamp Google TV Harvard Extension School Harvard Summer School Roku YouTube Status Page Communities Bluesky Discord Q&A Ed Q&A Facebook Group Q&A Facebook Page GitHub Instagram LinkedIn Group LinkedIn Page Medium ",
+      "ake this Course Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s seven weeks of material. For each week, follow this workflow: flowchart TD A[Watch Lecture] --&gt; B[Submit Problem Set] And then submit the course’s "
+    ]
+  },
+  {
+    "id": "cs50-r",
+    "url": "https://cs50.harvard.edu/r/",
+    "status": 200,
+    "checkedAt": "2026-10-13T11:58:17.977Z",
+    "snippets": [
+      "g Programs Final Project Shorts Academic Honesty CS50 Certificate FAQs Gradebook Staff Apple TV edX freeCodeCamp Google TV Roku YouTube Style Guide Status Page Communities Bluesky Discord Q&A Ed Q&A Facebook Group Q&A Facebook Page GitHub Instagram LinkedIn Group LinkedIn Page Medium Reddit Q&A Slack Q&A SoundCloud Tel",
+      "ake this Course Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s seven weeks of material. For each week, follow this workflow: flowchart TD A[Watch Lecture] --&gt; |recommended|B[Watch Shorts] A --&gt; C B --&gt; C["
+    ]
+  },
+  {
+    "id": "dlai-prompt",
+    "url": "https://www.deeplearning.ai/courses/chatgpt-prompt-eng",
+    "status": 200,
+    "checkedAt": "2026-10-13T11:58:18.591Z",
+    "snippets": [
+      "rompt Engineering for Developers All Courses Short Course ChatGPT Prompt Engineering for Developers Beginner 1h40m ChatGPT Prompt Engineering for Developers Instructors : Isa Fulford, Andrew Ng Earn an accomplishment with PRO · Updated Oct 12, 2026 Learn for Free Beginner 1h40m 9 Video Lessons 7 Code Examples 1 Graded ",
+      "structors : Isa Fulford, Andrew Ng Earn an accomplishment with PRO · Updated Oct 12, 2026 Learn for Free Beginner 1h40m 9 Video Lessons 7 Code Examples 1 Graded Assignment PRO Earn an accomplishment with PRO Updated Oct 12, 2026 Instructors: Isa Fulford, Andrew Ng OpenAI Learn more about Membership PRO Plan Learn for F",
+      "tors : Isa Fulford, Andrew Ng Earn an accomplishment with PRO · Updated Oct 12, 2026 Learn for Free Beginner 1h40m 9 Video Lessons 7 Code Examples 1 Graded Assignment PRO Earn an accomplishment with PRO Updated Oct 12, 2026 Instructors: Isa Fulford, Andrew Ng OpenAI Learn more about Membership PRO Plan Learn for Free W",
+      " 12, 2026 Instructors: Isa Fulford, Andrew Ng OpenAI Learn more about Membership PRO Plan Learn for Free What you&#x27;ll learn Learn prompt engineering best practices for application development Discover new ways to use LLMs, including how to build your own custom chatbot Gain hands-on practice writing and iterating o",
+      "ng prompts for the latest LLM models. Who should join? ChatGPT Prompt Engineering for Developers is beginner-friendly. Only a basic understanding of Python is needed. But it is also suitable for advanced machine learning engineers wanting to approach the cutting-edge of prompt engineering and use LLMs. Course Outline 9",
+      "-founder, Coursera Generative AI offers many opportunities for AI engineers to build, in minutes or hours, powerful applications that previously would have taken days or weeks. I’m excited about sharing these best practices to enable many more people to take advantage of these revolutionary new capabilities. – Andrew N",
+      "tage of these revolutionary new capabilities. – Andrew Ng ChatGPT Prompt Engineering for Developers Beginner 1h40m 9 Video Lessons 7 Code Examples 1 Graded Assignment PRO Earn an accomplishment with PRO Updated Oct 12, 2026 Instructors: Isa Fulford, Andrew Ng OpenAI Learn more about Membership PRO Plan Learn for Free C",
+      " 12, 2026 Instructors: Isa Fulford, Andrew Ng OpenAI Learn more about Membership PRO Plan Learn for Free Course access is free for a limited time during the DeepLearning.AI learning platform beta! Learn for Free Want to learn more about Generative AI? Keep learning with updates on curated AI news, courses, events, as w",
+      " Isa Fulford, Andrew Ng OpenAI Learn more about Membership PRO Plan Learn for Free Course access is free for a limited time during the DeepLearning.AI learning platform beta! Learn for Free Want to learn more about Generative AI? Keep learning with updates on curated AI news, courses, events, as well as Andrew’s though",
+      "urse access is free for a limited time during the DeepLearning.AI learning platform beta! Learn for Free Want to learn more about Generative AI? Keep learning with updates on curated AI news, courses, events, as well as Andrew’s thoughts from DeepLearning.AI! Learn for Free Courses The Batch Community Careers About Con",
+      "s on curated AI news, courses, events, as well as Andrew’s thoughts from DeepLearning.AI! Learn for Free Courses The Batch Community Careers About Contact Help Get the mobile app Terms of Use Privacy Policy Choose Your Plan Planning for more users? Team Plan Learn More Keep Current Plan close "
+    ]
+  },
+  {
+    "id": "fr-python-code",
+    "url": "https://www.fun-mooc.fr/fr/cours/apprendre-a-coder-avec-python/",
+    "status": 200,
+    "checkedAt": "2026-10-13T11:58:19.398Z",
+    "snippets": [
+      "ensive et encadrée pour apprendre à coder et devenir autonome en programmation. Durée : 15 semaines Effort : 120 heures Rythme: ~8 heures/semaine Langues: Français Ce que vous allez apprendre À la fin de ce cours, vous saurez : Faire l'installation de Python 3 et d’un environnement de développement sur votre ordinateur",
+      "ant doit avoir un ordinateur à sa disposition capable d'accueillir l'environnement de développement gratuit Python : Python3 et PyCharm Community. Évaluation et Certification L’évaluation sur 300 points comporte trois classes d'exercices notés : - des quiz pour valider que la matière a bien été assimilée (102 points) -"
+    ]
+  },
+  {
+    "id": "kaggle-genai-intensive",
+    "url": "https://www.kaggle.com/learn-guide/5-day-genai",
+    "status": 200,
+    "checkedAt": "2026-10-13T11:58:19.813Z",
+    "snippets": []
+  },
+  {
+    "id": "ms-python-data-analysis",
+    "url": "https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-python/",
+    "status": 200,
+    "checkedAt": "2026-10-13T11:58:20.583Z",
+    "snippets": [
+      "rer and Microsoft Edge Read in English Explore and analyze data with Python Module 9 Units Feedback Intermediate Data Scientist Azure Data exploration and analysis is at the core of data science. Data scientists require skills in programming languages like Python to explore, visualize, and manipulate data. Learning obj",
+      " analysis tasks. How to use Python packages like NumPy, Pandas, and Matplotlib to analyze data. Add Prerequisites Knowledge of basic mathematics Some experience programming in Python Familiarity with Jupyter notebooks Get started with Azure Choose the Azure account that's right for you. Pay as you go or try Azure free ",
+      "ks Get started with Azure Choose the Azure account that's right for you. Pay as you go or try Azure free for up to 30 days. Sign up. Introduction min Explore data with NumPy and Pandas min Exercise - Explore data with NumPy and Pandas min Visualize data min Exercise - Visualize data with Matplotlib min Examine real wor"
+    ]
+  }
+]

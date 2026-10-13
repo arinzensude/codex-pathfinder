@@ -1,34 +1,1710 @@
 [
   {
-    "id": "placeholder-1",
-    "title": "",
-    "provider": "",
-    "url": "",
-    "goals": [],
-    "level": null,
-    "hours": null,
-    "cost": null,
-    "priceNote": "",
-    "dataWeight": null,
-    "language": null,
-    "format": null,
-    "sourceNote": "TODO: Replace this placeholder with sourced course details. No course page checked.",
+    "id": "kaggle-intro-programming",
+    "title": "Intro to Programming",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/intro-to-programming/course",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": 5,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Page states no coding experience, estimated 5 hours and no cost; Python exercises.",
     "lastVerified": null
   },
   {
-    "id": "placeholder-2",
-    "title": "",
-    "provider": "",
-    "url": "",
-    "goals": [],
+    "id": "kaggle-python",
+    "title": "Python",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/python",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "basics",
+    "hours": 5,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Page lists Intro to Programming prerequisite, estimated 5 hours and no cost.",
+    "lastVerified": null
+  },
+  {
+    "id": "cs50-python",
+    "title": "CS50’s Introduction to Programming with Python",
+    "provider": "Harvard University",
+    "url": "https://cs50.harvard.edu/python/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Page welcomes learners without prior programming experience and explicitly offers free OpenCourseWare; ten weeks is not an hour estimate.",
+    "lastVerified": null
+  },
+  {
+    "id": "google-python",
+    "title": "Google's Python Class",
+    "provider": "Google",
+    "url": "https://developers.google.com/edu/python",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "basics",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Page explicitly says free class for people with a little programming experience; written lessons, videos and exercises. Two days not converted to hours.",
+    "lastVerified": null
+  },
+  {
+    "id": "helsinki-python-intro",
+    "title": "Introduction to Programming — Python Programming MOOC 2026",
+    "provider": "University of Helsinki",
+    "url": "https://programming-26.mooc.fi/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course overview identifies introductory course (parts 1–7); linked FAQ explicitly says free of charge: https://programming-26.mooc.fi/faq/ . ECTS not converted to hours.",
+    "lastVerified": null
+  },
+  {
+    "id": "helsinki-python-advanced",
+    "title": "Advanced Course in Programming — Python Programming MOOC 2026",
+    "provider": "University of Helsinki",
+    "url": "https://programming-26.mooc.fi/part-8/",
+    "goals": [
+      "python-programming"
+    ],
     "level": null,
     "hours": null,
     "cost": null,
-    "priceNote": "",
-    "dataWeight": null,
-    "language": null,
-    "format": null,
-    "sourceNote": "TODO: Replace this placeholder with sourced course details. No course page checked.",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Overview https://programming-26.mooc.fi/ identifies separate Advanced Course (parts 8–14); entry page covers objects/methods. Advanced label not mapped to intermediate; fee not established for this course.",
+    "lastVerified": null
+  },
+  {
+    "id": "mit-python-2022",
+    "title": "Introduction to CS and Programming using Python",
+    "provider": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page states little to no programming experience, Python 3, lecture videos and assignments; page does not state an hour estimate or fee.",
+    "lastVerified": null
+  },
+  {
+    "id": "fcc-python",
+    "title": "Python Certification",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/python-v9",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Page teaches Python fundamentals through labs, workshops, quizzes and five projects; no hour estimate or explicit price in retrieved course page.",
+    "lastVerified": null
+  },
+  {
+    "id": "fcc-scientific-python",
+    "title": "Scientific Computing with Python",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Page starts with fundamental programming and interactive projects. Content remains available but is no longer updated. Hours and price not stated.",
+    "lastVerified": null
+  },
+  {
+    "id": "fcc-intermediate-python",
+    "title": "Intermediate Python Programming Course",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/news/intermediate-python-course",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "intermediate",
+    "hours": 6,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Official course announcement explicitly states free six-hour intermediate video course; covers generators, threading and context managers.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-python-fundamentals",
+    "title": "Get Started with Python Programming: Part 1 - Fundamentals",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": 3.2,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Learning path page lists Beginner, 3 hr 12 min and four modules with coding exercises. Fee not explicitly stated on retrieved page.",
+    "lastVerified": null
+  },
+  {
+    "id": "cisco-python-1",
+    "title": "Python Essentials 1",
+    "provider": "Cisco Networking Academy",
+    "url": "https://www.netacad.com/courses/python-essentials-1?courseLang=en-US",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": 30,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page identifies Python Essentials 1. Official linked catalog https://www.netacad.com/catalogs/learn?courseLang=en-US lists Beginner, 30 hours, Free; course exercises.",
+    "lastVerified": null
+  },
+  {
+    "id": "cisco-python-2",
+    "title": "Python Essentials 2",
+    "provider": "Cisco Networking Academy",
+    "url": "https://www.netacad.com/courses/python-essentials-2?courseLang=en-US",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "intermediate",
+    "hours": 40,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page identifies Python Essentials 2. Official catalog https://www.netacad.com/catalogs/learn?courseLang=en-US lists Intermediate, 40 hours, Free; course exercises.",
+    "lastVerified": null
+  },
+  {
+    "id": "py4e",
+    "title": "Python for Everybody",
+    "provider": "Charles Severance / University of Michigan",
+    "url": "https://www.py4e.com/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": null,
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Author's course page explicitly offers free materials, lectures, book, autograded assignments and badges. No learner level or hours stated.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-python-bases",
+    "title": "Apprenez les bases du langage Python",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/7168871-apprenez-les-bases-du-langage-python",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": 6,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French page states Facile, 6 heures, cours en libre accès and intended for learners who have never coded; written lessons, quizzes, optional video.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-python-oop",
+    "title": "Apprenez la programmation orientée objet avec Python",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/7150616-apprenez-la-programmation-orientee-objet-avec-python",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "intermediate",
+    "hours": 12,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French page lists Moyenne, 12 heures, cours en libre accès; requires basic Python and teaches classes/inheritance.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-python-fundamentals",
+    "title": "Python : des fondamentaux aux concepts avancés du langage",
+    "provider": "Université Côte d’Azur / FUN MOOC",
+    "url": "https://www.fun-mooc.fr/fr/cours/python-3-des-fondamentaux-aux-concepts-avances-du-langage/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "basics",
+    "hours": 81,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "fr",
+    "format": "video",
+    "sourceNote": "Page lists Français, effort 81 heures and accès gratuit; expects computing/algorithm familiarity, uses short videos, notebooks and exercises. Supports both experienced programmers and prepared beginners.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-python-code",
+    "title": "Apprendre à coder avec Python",
+    "provider": "Université Libre de Bruxelles / FUN MOOC",
+    "url": "https://www.fun-mooc.fr/fr/cours/apprendre-a-coder-avec-python/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": 120,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "fr",
+    "format": "video",
+    "sourceNote": "Page lists Français, effort 120 heures, few prerequisites, Python 3 and intensive practice. Retrieved page does not establish course fee.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-python-deep-dive",
+    "title": "Python 3: Deep Dive (Part 1 - Functional)",
+    "provider": "Udemy / Dr. Fred Baptiste",
+    "url": "https://www.udemy.com/course/python-3-deep-dive-part-1/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "basics",
+    "hours": 45.8,
+    "cost": "paid",
+    "priceNote": "Price varies; frequent sales",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: rating 4.9/5 from 13,577 ratings; English, 45h 48m; requires basic Python. Udemy course variant https://persistent.udemy.com/course/python-3-deep-dive-part-1/ shows paid purchase/sale; confirm checkout manually.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-python-automate",
+    "title": "Automate the Boring Stuff with Python Programming",
+    "provider": "Udemy / Al Sweigart",
+    "url": "https://www.udemy.com/course/automate/",
+    "goals": [
+      "python-programming"
+    ],
+    "level": "new",
+    "hours": 9.5,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: rating 4.7/5 from 119,653 ratings; English, 9h 30m, no programming experience required. Price not exposed in retrieved page; do not assume free access to course from free book.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-intro-ml",
+    "title": "Intro to Machine Learning",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 3,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page: estimated 3 hours, no cost, builds on Python; first models, validation and random forests.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-intermediate-ml",
+    "title": "Intermediate Machine Learning",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/intermediate-machine-learning",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "intermediate",
+    "hours": 4,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page: Intermediate title, 4 estimated hours, no cost; builds on Intro to Machine Learning and Pandas.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-feature-engineering",
+    "title": "Feature Engineering",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/feature-engineering/course",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "intermediate",
+    "hours": 5,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page: 5 estimated hours, no cost; prerequisite Intermediate Machine Learning, exercises on features and PCA.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-deep-learning",
+    "title": "Intro to Deep Learning",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/intro-to-deep-learning/",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 4,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page: 4 estimated hours, no cost; builds on Intro to Machine Learning, TensorFlow/Keras exercises.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-computer-vision",
+    "title": "Computer Vision",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/computer-vision",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 4,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page: 4 estimated hours, no cost; prerequisite Intro to Deep Learning, convolutional neural networks and augmentation.",
+    "lastVerified": null
+  },
+  {
+    "id": "google-intro-ml",
+    "title": "Introduction to Machine Learning",
+    "provider": "Google",
+    "url": "https://developers.google.com/machine-learning/intro-to-ml",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "new",
+    "hours": 0.3333,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Course page states introductory concepts, no implementation/data work, estimated 20 minutes. No explicit fee.",
+    "lastVerified": null
+  },
+  {
+    "id": "google-ml-crash",
+    "title": "Machine Learning Crash Course",
+    "provider": "Google",
+    "url": "https://developers.google.com/machine-learning/crash-course/",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page shows interactive visualizations, exercises, regression, classification and LLMs. Linked prerequisites require Python/NumPy/pandas familiarity. Current course page has no overall hours or fee; historical 15-hour figure not assumed.",
+    "lastVerified": null
+  },
+  {
+    "id": "google-ml-framing",
+    "title": "Introduction to Machine Learning Problem Framing",
+    "provider": "Google",
+    "url": "https://developers.google.com/machine-learning/problem-framing",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": null,
+    "hours": 0.75,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Course page: estimated 45 minutes, choosing ML solutions and success metrics. Learner level and fee not explicitly stated.",
+    "lastVerified": null
+  },
+  {
+    "id": "google-ml-clustering",
+    "title": "Introduction to clustering",
+    "provider": "Google",
+    "url": "https://developers.google.com/machine-learning/clustering",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 1.8333,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Course page: 110 minutes; requires ML Crash Course and Problem Framing or equivalent; k-means and autoencoders. Fee unstated.",
+    "lastVerified": null
+  },
+  {
+    "id": "google-decision-forests",
+    "title": "Decision Forests",
+    "provider": "Google",
+    "url": "https://developers.google.com/machine-learning/decision-forests",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 2.5,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Course page: estimated 2.5 hours; requires basic ML, preprocessing, Crash Course and Problem Framing; trees and forests. Fee unstated.",
+    "lastVerified": null
+  },
+  {
+    "id": "google-recommendations",
+    "title": "Recommendation Systems",
+    "provider": "Google",
+    "url": "https://developers.google.com/machine-learning/recommendation",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 4,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Course page: estimated 4 hours, requires ML Crash Course and linear algebra; candidate generation and ranking. Fee unstated.",
+    "lastVerified": null
+  },
+  {
+    "id": "fastai-practical-dl",
+    "title": "Practical Deep Learning for Coders",
+    "provider": "fast.ai",
+    "url": "https://course.fast.ai/",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Page explicitly says free course for people with coding experience; a year of coding and high-school math sufficient. Nine lessons around 90 minutes each; no exact overall hours used.",
+    "lastVerified": null
+  },
+  {
+    "id": "cs50-ai",
+    "title": "CS50’s Introduction to Artificial Intelligence with Python",
+    "provider": "Harvard University",
+    "url": "https://cs50.harvard.edu/ai/",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Page offers free OpenCourseWare; prerequisite CS50x or one year Python; projects include classification and machine learning. Seven weeks not converted to hours.",
+    "lastVerified": null
+  },
+  {
+    "id": "fcc-tensorflow",
+    "title": "TensorFlow 2.0 Full Course",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/news/massive-tensorflow-2-0-free-course",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 7,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Official course page explicitly offers free seven-hour TensorFlow 2.0 video course for Python programmers seeking ML/AI skills; includes Colab notebooks.",
+    "lastVerified": null
+  },
+  {
+    "id": "inria-scikit-learn",
+    "title": "Machine learning in Python with scikit-learn",
+    "provider": "Inria / FUN MOOC",
+    "url": "https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 36,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Page: effort 36 hours, free access, basic Python required, practical notebooks and exercises. Explicit note says English only despite bilingual language metadata; not counted as French.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-ml-intro",
+    "title": "Initiez-vous au Machine Learning",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/8063076-initiez-vous-au-machine-learning",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "intermediate",
+    "hours": 10,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French course page: Moyenne, 10 heures, cours en libre accès; requires Python data libraries, algebra and statistics.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-ml-supervised",
+    "title": "Maîtrisez l'apprentissage supervisé",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/8431846-maitrisez-l-apprentissage-supervise",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "intermediate",
+    "hours": 10,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French course page: Moyenne, 10 heures, cours en libre accès; requires solid Python, data analysis and Jupyter; evaluation, optimization and deployment.",
+    "lastVerified": null
+  },
+  {
+    "id": "building-ai",
+    "title": "Building AI",
+    "provider": "University of Helsinki / MinnaLearn",
+    "url": "https://buildingai.elementsofai.com/",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "basics",
+    "hours": 50,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course overview: Basic Understanding, approximately 50 hours, free online course with optional paid certificate; ML and neural networks, three exercise difficulty levels.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-ml-concepts",
+    "title": "Introduction to machine learning concepts",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "new",
+    "hours": 1.55,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Module page: Beginner, 1 hr 33 min, basic math prerequisite; training, evaluating ML and deep learning. Fee unstated.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-ml-az",
+    "title": "Machine Learning A-Z [2026]: ML, DL, AI with AWS, Python & R",
+    "provider": "Udemy / SuperDataScience",
+    "url": "https://www.udemy.com/course/machinelearning/",
+    "goals": [
+      "machine-learning"
+    ],
+    "level": "new",
+    "hours": 49.2333,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: rating 4.5/5 from 206,457 ratings; English, 49h 14m; high-school math only, beginners welcomed; AWS, Python/R model building. Price not exposed, cost remains unknown.",
+    "lastVerified": null
+  },
+  {
+    "id": "dlai-prompt",
+    "title": "ChatGPT Prompt Engineering for Developers",
+    "provider": "DeepLearning.AI / OpenAI",
+    "url": "https://www.deeplearning.ai/courses/chatgpt-prompt-eng",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": 1.6667,
+    "cost": "free",
+    "priceNote": "Free for a limited time during platform beta; optional PRO features",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Public course page fetched 2026-10-13: Beginner, 1h40m, nine videos/seven code examples, basic Python required, free access for limited beta period; optional PRO assessment/accomplishment. Earlier web retrieval was blocked; public GET later succeeded.",
+    "lastVerified": null
+  },
+  {
+    "id": "dlai-langchain",
+    "title": "LangChain for LLM Application Development",
+    "provider": "DeepLearning.AI / LangChain",
+    "url": "https://www.deeplearning.ai/alpha/short-courses/langchain-for-llm-application-development/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": 1.6333,
+    "cost": "free",
+    "priceNote": "Free for a limited time during platform beta; optional PRO features",
+    "dataWeight": "medium",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Indexed course page lists Beginner, 1 Hour 38 Minutes, video/code lessons and free access for limited beta period; basic Python helpful.",
+    "lastVerified": null
+  },
+  {
+    "id": "dlai-chat-data",
+    "title": "LangChain Chat with Your Data",
+    "provider": "DeepLearning.AI / LangChain",
+    "url": "https://www.deeplearning.ai/courses/langchain-chat-with-your-data",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": 1.1333,
+    "cost": "free",
+    "priceNote": "Free for a limited time during platform beta; optional PRO features",
+    "dataWeight": "medium",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Indexed course page lists Beginner, 1h8m, eight video lessons and code examples, free access for limited beta period; PRO graded assignment optional.",
+    "lastVerified": null
+  },
+  {
+    "id": "dlai-evaluate-genai",
+    "title": "Evaluating and Debugging Generative AI",
+    "provider": "DeepLearning.AI / Weights & Biases",
+    "url": "https://www.deeplearning.ai/courses/evaluating-debugging-generative-ai",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "intermediate",
+    "hours": 0.8333,
+    "cost": "free",
+    "priceNote": "Free for a limited time during platform beta; optional PRO features",
+    "dataWeight": "medium",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Indexed course page lists Intermediate, 50m, seven video lessons, requires Python/PyTorch familiarity; free access for limited beta period, PRO accomplishment optional.",
+    "lastVerified": null
+  },
+  {
+    "id": "dlai-vector-databases",
+    "title": "Vector Databases: from Embeddings to Applications",
+    "provider": "DeepLearning.AI / Weaviate",
+    "url": "https://www.deeplearning.ai/alpha/short-courses/vector-databases-embeddings-applications",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "intermediate",
+    "hours": 0.9167,
+    "cost": "free",
+    "priceNote": "Free for a limited time during platform beta; optional PRO features",
+    "dataWeight": "medium",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Indexed course page lists Intermediate, 55 Minutes, video/code lessons, free access for limited beta period; semantic search and RAG.",
+    "lastVerified": null
+  },
+  {
+    "id": "dlai-advanced-rag",
+    "title": "Building and Evaluating Advanced RAG",
+    "provider": "DeepLearning.AI / LlamaIndex / TruEra",
+    "url": "https://www.deeplearning.ai/alpha/short-courses/building-evaluating-advanced-rag",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": 1.9167,
+    "cost": "free",
+    "priceNote": "Free for a limited time during platform beta; optional PRO features",
+    "dataWeight": "medium",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Indexed course page lists Beginner (despite Advanced title), 1 Hour 55 Minutes, basic Python prerequisite, free access for limited beta period.",
+    "lastVerified": null
+  },
+  {
+    "id": "hf-llm",
+    "title": "LLM Course",
+    "provider": "Hugging Face",
+    "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "basics",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page explicitly says completely free; requires good Python, best after introductory deep learning. Chapters include fine-tuning/transformers; 6–8 hours per chapter not an exact total.",
+    "lastVerified": null
+  },
+  {
+    "id": "hf-agents",
+    "title": "AI Agents Course",
+    "provider": "Hugging Face",
+    "url": "https://huggingface.co/learn/agents-course/en/unit0/introduction",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "basics",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Page explicitly says free course and free certification; basic Python and LLM knowledge required; hands-on agents. Weekly 3–4 hour range not converted to exact total.",
+    "lastVerified": null
+  },
+  {
+    "id": "hf-smol",
+    "title": "smol-course",
+    "provider": "Hugging Face",
+    "url": "https://huggingface.co/learn/smol-course/en/unit0/1",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "basics",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Page says free course; requires Python, ML fundamentals, PyTorch experience and transformer basics; LLM fine-tuning, preference alignment. No exact overall hours.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-genai-intro",
+    "title": "Introduction to generative AI and agents",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Module page lists Beginner, LLMs, prompts, agents and exercise; requires basic AI/ML familiarity. Retrieved module duration and fee absent.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-effective-prompts",
+    "title": "Write effective prompts to achieve optimal results",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Module page lists Beginner, prompt context/goals/sources/expectations and personalization; Microsoft 365 familiarity expected. Hours and fee absent.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-explore-genai",
+    "title": "Explore Generative AI",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/explore-generative-ai/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Module page lists Beginner and covers generative AI, NLP/NLG/LLMs and Copilot creativity. Duration and fee absent.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-copilot-start",
+    "title": "Get started with Microsoft Copilot",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/get-started-with-copilot/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Module page lists Beginner; GPT fundamentals, effective prompts and feedback. Duration and fee absent.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-copilot-productivity",
+    "title": "Boost your productivity with Microsoft Copilot",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/boost-productivity-with-copilot/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "text",
+    "sourceNote": "Module page lists Beginner and covers productivity, drafts and RAG. Duration and fee absent; product license requirements must be checked separately.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-genai-apps",
+    "title": "Develop generative AI apps on Microsoft Foundry",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/develop-generative-ai-apps/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "intermediate",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Learning path page lists Intermediate, programming experience and fundamental Azure AI prerequisites; model deployment, evaluation and apps. Hours/fee absent; Azure exercises may incur charges.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-chatgpt",
+    "title": "Utilisez ChatGPT pour améliorer votre productivité",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/8204091-utilisez-chatgpt-pour-ameliorer-votre-productivite",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": 2,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French course page lists Facile, 2 heures and cours en libre accès; prompt engineering, text generation and productivity.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-ai-learning",
+    "title": "Optimisez votre apprentissage avec l'Intelligence Artificielle",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/8248141-optimisez-votre-apprentissage-avec-l-intelligence-artificielle",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": 6,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French course page lists Facile, 6 heures and cours en libre accès; critically use generated content, create exercises/documents; ChatGPT familiarity helpful.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-ms-ai-fluency",
+    "title": "Maîtrise de l'IA",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/fr-fr/training/paths/ai-fluency/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French learning path page lists Débutant and seven modules, including generative AI, prompting/search and Copilot. Hours and fee absent.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-genai-intensive",
+    "title": "5-Day Gen AI Intensive Course with Google",
+    "provider": "Google / Kaggle",
+    "url": "https://www.kaggle.com/learn-guide/5-day-genai",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": null,
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official Kaggle guide identified in course index https://www.kaggle.com/learn/ ; self-paced GenAI foundations. Course guide client-rendered; fee, total hours and learner level not established from guide. Google launch describes live course as free, not assumed for all guide services.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-prompt-bootcamp",
+    "title": "The Complete Prompt Engineering for AI Bootcamp (2026)",
+    "provider": "Udemy / Mike Taylor / James Phoenix",
+    "url": "https://www.udemy.com/course/prompt-engineering-for-ai/",
+    "goals": [
+      "generative-ai-and-prompt-engineering"
+    ],
+    "level": "basics",
+    "hours": 20.0667,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Current course page: rating 4.5/5 from 166,428 ratings; English, 20h 4m, Python Coding Required. Prompt principles and AI application projects. Price not exposed; cost remains unknown.",
+    "lastVerified": null
+  },
+  {
+    "id": "aws-educate-storage",
+    "title": "Getting Started with Storage",
+    "provider": "AWS Educate",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official course listing identifies Storage course and S3 storage and static website practice; content designed for beginners, free labs, no credit card. Shared registration launcher; course-specific URL/hours need manual check.",
+    "lastVerified": null
+  },
+  {
+    "id": "aws-educate-compute",
+    "title": "Getting Started with Compute",
+    "provider": "AWS Educate",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official course listing identifies Compute course and EC2 computing instances practice; content designed for beginners, free labs, no credit card. Shared registration launcher; course-specific URL/hours need manual check.",
+    "lastVerified": null
+  },
+  {
+    "id": "aws-educate-networking",
+    "title": "Getting Started with Networking",
+    "provider": "AWS Educate",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official course listing identifies Networking course and VPC secure networks practice; content designed for beginners, free labs, no credit card. Shared registration launcher; course-specific URL/hours need manual check.",
+    "lastVerified": null
+  },
+  {
+    "id": "aws-educate-databases",
+    "title": "Getting Started with Databases",
+    "provider": "AWS Educate",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official course listing identifies Databases course and RDS database instances and web application connections practice; content designed for beginners, free labs, no credit card. Shared registration launcher; course-specific URL/hours need manual check.",
+    "lastVerified": null
+  },
+  {
+    "id": "aws-educate-operations",
+    "title": "Getting Started with Cloud Operations",
+    "provider": "AWS Educate",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official course listing identifies Cloud Operations course and cloud operations and cost estimation practice; content designed for beginners, free labs, no credit card. Shared registration launcher; course-specific URL/hours need manual check.",
+    "lastVerified": null
+  },
+  {
+    "id": "aws-cloud-practitioner",
+    "title": "AWS Cloud Practitioner Essentials",
+    "provider": "AWS Skill Builder",
+    "url": "https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials/8D79F3AVR7",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": 12.75,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Current official course listing https://aws.amazon.com/training/learn-about/cloud-practitioner/ links this course and states 12 hours 45 minutes, beginners. Course page client-rendered; current price not established; older six-hour edition not used.",
+    "lastVerified": null
+  },
+  {
+    "id": "aws-cloud-essentials-plan",
+    "title": "AWS Cloud Essentials Learning Plan",
+    "provider": "AWS",
+    "url": "https://aws.amazon.com/training/learn-about/cloud-practitioner/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official plan page explicitly says designed for beginners, self-paced courses covering core services, pricing/security. Course selection via linked Skill Builder launcher; total hours and current fee unstated.",
+    "lastVerified": null
+  },
+  {
+    "id": "aws-cloud-quest",
+    "title": "AWS Cloud Quest: Cloud Practitioner",
+    "provider": "AWS",
+    "url": "https://aws.amazon.com/training/digital/immersive-learning/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official cloud-practitioner course page identifies role-playing course; current immersive-learning page says limited access for free accounts. Historical free claim not assumed for full current access; launcher must be checked manually. Heavy 3D game.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-aws-intro-free",
+    "title": "Introduction to AWS (2026) - Free course",
+    "provider": "Udemy / Chetan Agrawal",
+    "url": "https://www.udemy.com/course/overview-of-aws-services/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": 0.8333,
+    "cost": "free",
+    "dataWeight": "medium",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Current course page: rating 4.8/5 from 1,306 ratings; English, 50m total; explicitly Free course and introductory service overview. Older search snapshot differed; current page figures used.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-aws-saa",
+    "title": "Ultimate AWS Certified Solutions Architect Associate 2026",
+    "provider": "Udemy / Stephane Maarek",
+    "url": "https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": 27.2333,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: rating 4.7/5 from 299,306 ratings; English, 27h 14m, IT basics required, no AWS experience needed. Price not exposed in retrieved page; cost unknown.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-aws-developer",
+    "title": "Ultimate AWS Certified Developer Associate 2026 DVA-C02",
+    "provider": "Udemy / Stephane Maarek",
+    "url": "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "basics",
+    "hours": 31.5333,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: rating 4.7/5 from 124,634 ratings; English, 31h 32m; requires programming basics (functions/CLI/JSON), no AWS experience necessary. Fee absent; cloud exercises may incur charges.",
+    "lastVerified": null
+  },
+  {
+    "id": "fcc-aws-bootcamp",
+    "title": "AWS Cloud Project Bootcamp",
+    "provider": "freeCodeCamp / ExamPro",
+    "url": "https://www.freecodecamp.org/news/free-107-hour-aws-cloud-project-bootcamp",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "basics",
+    "hours": 107,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Official course announcement explicitly says free, 107-hour video; intended for learners with associate certification or cloud work experience; projects, containers, CI/CD. Cloud usage separate from free video access.",
+    "lastVerified": null
+  },
+  {
+    "id": "fcc-aws-ccp",
+    "title": "AWS Certified Cloud Practitioner Study Course",
+    "provider": "freeCodeCamp / ExamPro",
+    "url": "https://www.freecodecamp.org/news/aws-certified-cloud-practitioner-study-course-pass-the-exam-with-this-free-13-hour-course",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": null,
+    "hours": 14,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Current course page says free 14-hour CLF-C02 course, despite legacy 13-hour URL. Course-level learner prerequisite not clearly stated; exam fees excluded.",
+    "lastVerified": null
+  },
+  {
+    "id": "fcc-aws-developer",
+    "title": "AWS Developer Associate Exam Course",
+    "provider": "freeCodeCamp / ExamPro",
+    "url": "https://www.freecodecamp.org/news/pass-the-aws-developer-associate-exam-with-this-free-16-hour-course",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": null,
+    "hours": 16,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Official course page explicitly offers free 16-hour video; includes six hours overlapping Solutions Architect course. Published 2020, old exam version; level unspecified. Human must review relevance before verification.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-aws-openclassrooms",
+    "title": "Découvrez le cloud avec Amazon Web Services",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "intermediate",
+    "hours": 12,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French course page: Moyenne, 12 heures, cours en libre accès; requires web development and command-line knowledge, EC2/RDS/S3 exercises. AWS resources billed separately.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-aws-essentials",
+    "title": "AWS Essentials",
+    "provider": "LeCloudFacile / Amadou Merico",
+    "url": "https://lecloudfacile.com/mes-cours/aws-essentials/",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "fr",
+    "format": "video",
+    "sourceNote": "French course page says Débutant, Gratuit, 38 lessons, labs and quizzes; instructor describes prior senior architect/manager role at AWS France. No course hours stated. Independent provider, not AWS Skill Builder.",
+    "lastVerified": null
+  },
+  {
+    "id": "coursera-aws-technical",
+    "title": "AWS Cloud Technical Essentials",
+    "provider": "AWS / Coursera",
+    "url": "https://www.coursera.org/learn/aws-cloud-technical-essentials",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": 20,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: Beginner, English, 2 weeks at 10 hours/week (20 hours arithmetic); no AWS knowledge required, technical background expected. Enroll for free does not establish full free audit; check enrollment options and cost.",
+    "lastVerified": null
+  },
+  {
+    "id": "coursera-aws-practitioner",
+    "title": "AWS Cloud Practitioner Essentials",
+    "provider": "AWS / Coursera",
+    "url": "https://www.coursera.org/learn/aws-cloud-practitioner-essentials",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "new",
+    "hours": 40,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: Beginner, taught English, 4 weeks at 10 hours/week (40 hours arithmetic), core cloud concepts. Access fee/free audit not established; check checkout. Separate platform edition from Skill Builder.",
+    "lastVerified": null
+  },
+  {
+    "id": "coursera-aws-migrating",
+    "title": "Migrating to the AWS Cloud",
+    "provider": "AWS / Coursera",
+    "url": "https://www.coursera.org/learn/aws-fundamentals-migrating-to-the-cloud?specialization=aws-fundamentals",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "intermediate",
+    "hours": 7,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page explicitly lists Intermediate, 7 hours, taught English, related experience required. Parent specialization says it cannot be taken free; individual audit/access cost unconfirmed, financial aid conditional.",
+    "lastVerified": null
+  },
+  {
+    "id": "coursera-aws-architecting",
+    "title": "Architecting Solutions on AWS",
+    "provider": "AWS / Coursera",
+    "url": "https://www.coursera.org/learn/architecting-solutions-on-aws?specialization=aws-fundamentals",
+    "goals": [
+      "aws-cloud"
+    ],
+    "level": "intermediate",
+    "hours": 20,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: Intermediate, taught English, 2 weeks at 10 hours/week (20 hours arithmetic), related experience required; AWS architecture use cases. Parent specialization fee is required; individual audit/cost unconfirmed.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-pandas",
+    "title": "Pandas",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/pandas",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "basics",
+    "hours": 4,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Indexed course page: builds on Python, 4 estimated hours, no cost; notebooks/exercises on grouping, combining and summarizing data.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-data-viz",
+    "title": "Data Visualization",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/data-visualization",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": null,
+    "hours": 4,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Indexed course page: 4 estimated hours, no cost; Seaborn, charts and final project. No explicit learner level/prerequisites captured.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-sql-intro",
+    "title": "Intro to SQL",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/intro-to-sql",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": null,
+    "hours": 3,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page: 3 estimated hours, no cost, SQL/BigQuery query exercises. Introductory topic but no explicit learner level captured.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-sql-advanced",
+    "title": "Advanced SQL",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/advanced-sql/course",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": null,
+    "hours": 4,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page: 4 estimated hours, no cost, prerequisite Intro to SQL. Advanced title not automatically mapped to intermediate; analytic functions and efficient queries.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-data-cleaning",
+    "title": "Data Cleaning",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/data-cleaning",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "basics",
+    "hours": 4,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Indexed course page: 4 estimated hours, no cost, builds on Pandas; missing values, normalization, dates, encoding and inconsistent entries.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-time-series",
+    "title": "Time Series",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/time-series",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "intermediate",
+    "hours": 5,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Indexed course page: 5 estimated hours, no cost, prerequisite Intermediate Machine Learning; regression, trend, seasonality, hybrid forecasting.",
+    "lastVerified": null
+  },
+  {
+    "id": "kaggle-geospatial",
+    "title": "Geospatial Analysis",
+    "provider": "Kaggle",
+    "url": "https://www.kaggle.com/learn/geospatial-analysis",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": null,
+    "hours": 4,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Indexed official course page: 4 hours, no cost; interactive maps and spatial patterns. Course-level prerequisite/level not captured.",
+    "lastVerified": null
+  },
+  {
+    "id": "fcc-data-analysis",
+    "title": "Data Analysis with Python",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/data-analysis-with-python",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": null,
+    "hours": null,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page teaches analysis with NumPy, Pandas, Matplotlib and Seaborn, videos and projects. Content no longer updated. Total hours, fee and learner level not stated; free sign-in is not a course-price statement.",
+    "lastVerified": null
+  },
+  {
+    "id": "ms-python-data-analysis",
+    "title": "Explore and analyze data with Python",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-python/",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "intermediate",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Module page and official training index label Intermediate; NumPy/Pandas/Matplotlib analysis exercises. Retrieved module hours and fee absent.",
+    "lastVerified": null
+  },
+  {
+    "id": "cs50-sql",
+    "title": "CS50’s Introduction to Databases with SQL",
+    "provider": "Harvard University",
+    "url": "https://cs50.harvard.edu/sql/",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": null,
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Official course page fetched 2026-10-13 explicitly offers free OpenCourseWare with lecture videos and problem sets; seven weeks not converted to hours. Learner level not explicitly established. Databases and SQL queries.",
+    "lastVerified": null
+  },
+  {
+    "id": "cs50-r",
+    "title": "CS50’s Introduction to Programming with R",
+    "provider": "Harvard University",
+    "url": "https://cs50.harvard.edu/r/",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": null,
+    "hours": null,
+    "cost": "free",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Official course page fetched 2026-10-13 explicitly offers free OpenCourseWare with lecture videos and problem sets; seven weeks not converted to hours. Learner level not explicitly established. R programming and statistical computing.",
+    "lastVerified": null
+  },
+  {
+    "id": "mit-computational-data",
+    "title": "Introduction to Computational Thinking and Data Science",
+    "provider": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "basics",
+    "hours": null,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page explicitly follows 6.0001 Python course, uses Python 3.5, lecture videos and assignments. Overall hours and course fee unstated; legacy tools require human relevance review.",
+    "lastVerified": null
+  },
+  {
+    "id": "cisco-data-analytics",
+    "title": "Data Analytics Essentials",
+    "provider": "Cisco Networking Academy",
+    "url": "https://www.netacad.com/courses/data-analytics-essentials",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "new",
+    "hours": 30,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Course page: Free, 30 Hours, beginner/Débutant, 29 labs; English teaching, Excel, SQL, Tableau and portfolio projects.",
+    "lastVerified": null
+  },
+  {
+    "id": "cisco-data-science-python",
+    "title": "Data Science Essentials with Python",
+    "provider": "Cisco Networking Academy",
+    "url": "https://www.netacad.com/courses/data-science-essentials-with-python?courseLang=en-US",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "intermediate",
+    "hours": 40,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "en",
+    "format": "interactive",
+    "sourceNote": "Official course page identifies course. Official catalog https://www.netacad.com/catalogs/learn?courseLang=en-US lists Intermediate, 40 hours, Free; hands-on Pandas/Matplotlib projects.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-python-analysis",
+    "title": "Initiez-vous à Python pour l'analyse de données",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/6204541-initiez-vous-a-python-pour-l-analyse-de-donnees",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "new",
+    "hours": 6,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French course page: Facile, 6 heures, cours en libre accès; Python foundations and practical exercises for data analysis.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-python-data-libraries",
+    "title": "Découvrez les librairies Python pour la Data Science",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/7771531-decouvrez-les-librairies-python-pour-la-data-science",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "intermediate",
+    "hours": 8,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French course page: Moyenne, 8 heures, cours en libre accès; NumPy arrays, Pandas data frames, Matplotlib/Seaborn; basic Python recommended.",
+    "lastVerified": null
+  },
+  {
+    "id": "fr-statistical-tests",
+    "title": "Explorez les tests statistiques",
+    "provider": "OpenClassrooms",
+    "url": "https://openclassrooms.com/fr/courses/8313631-explorez-les-tests-statistiques",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "intermediate",
+    "hours": 12,
+    "cost": "free",
+    "dataWeight": "low",
+    "language": "fr",
+    "format": "text",
+    "sourceNote": "French course page: Moyenne, 12 heures, cours en libre accès; qualitative/quantitative statistical tests in Python, requires Python data analysis.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-data-science-python",
+    "title": "Python for Data Science and Machine Learning Bootcamp",
+    "provider": "Udemy / Jose Portilla / Pierian Training",
+    "url": "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "basics",
+    "hours": 24.9,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: rating 4.5/5 from 161,030 ratings; English, 24h 54m, some programming experience required; NumPy/Pandas/viz/ML. Price not exposed; updated May 2020, review legacy dependencies.",
+    "lastVerified": null
+  },
+  {
+    "id": "udemy-excel",
+    "title": "Microsoft Excel - Excel from Beginner to Advanced 2026",
+    "provider": "Udemy / Kyle Pew / Office Newb",
+    "url": "https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "new",
+    "hours": 22.8833,
+    "cost": "paid",
+    "priceNote": "Price varies; frequent sales",
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: rating 4.7/5 from 545,852 ratings; English, 22h 53m, no prior Excel knowledge required. Udemy variant https://endava.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/ exposes paid purchase price; Excel software separately required.",
+    "lastVerified": null
+  },
+  {
+    "id": "google-data-foundations",
+    "title": "Foundations: Data, Data, Everywhere",
+    "provider": "Google / Coursera",
+    "url": "https://www.coursera.org/learn/foundations-data",
+    "goals": [
+      "data-analysis"
+    ],
+    "level": "new",
+    "hours": 10,
+    "cost": null,
+    "dataWeight": "high",
+    "language": "en",
+    "format": "video",
+    "sourceNote": "Course page: Beginner, taught English, 1 week at 10 hours/week (10 hours arithmetic); foundational data analysis. Full free audit or actual fee not established; enrollment/free trial is not proof of free full access.",
     "lastVerified": null
   }
 ]

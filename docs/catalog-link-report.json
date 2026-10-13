@@ -1,0 +1,975 @@
+{
+  "checkedAt": "2026-10-13T11:57:15.702Z",
+  "entries": 100,
+  "uniqueUrls": 96,
+  "totals": {
+    "ok": 87,
+    "blocked, check manually": 9
+  },
+  "results": [
+    {
+      "ids": [
+        "aws-educate-storage",
+        "aws-educate-compute",
+        "aws-educate-networking",
+        "aws-educate-databases",
+        "aws-educate-operations"
+      ],
+      "url": "https://aws.amazon.com/education/awseducate/",
+      "finalUrl": "https://aws.amazon.com/education/awseducate/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "aws-cloud-quest"
+      ],
+      "url": "https://aws.amazon.com/training/digital/immersive-learning/",
+      "finalUrl": "https://aws.amazon.com/training/digital/immersive-learning/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "aws-cloud-essentials-plan"
+      ],
+      "url": "https://aws.amazon.com/training/learn-about/cloud-practitioner/",
+      "finalUrl": "https://aws.amazon.com/training/learn-about/cloud-practitioner/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "building-ai"
+      ],
+      "url": "https://buildingai.elementsofai.com/",
+      "finalUrl": "https://buildingai.elementsofai.com/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fastai-practical-dl"
+      ],
+      "url": "https://course.fast.ai/",
+      "finalUrl": "https://course.fast.ai/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "cs50-ai"
+      ],
+      "url": "https://cs50.harvard.edu/ai/",
+      "finalUrl": "https://cs50.harvard.edu/ai/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "cs50-python"
+      ],
+      "url": "https://cs50.harvard.edu/python/",
+      "finalUrl": "https://cs50.harvard.edu/python/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "cs50-r"
+      ],
+      "url": "https://cs50.harvard.edu/r/",
+      "finalUrl": "https://cs50.harvard.edu/r/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "cs50-sql"
+      ],
+      "url": "https://cs50.harvard.edu/sql/",
+      "finalUrl": "https://cs50.harvard.edu/sql/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "google-python"
+      ],
+      "url": "https://developers.google.com/edu/python",
+      "finalUrl": "https://developers.google.com/edu/python?hl=fa",
+      "status": 200,
+      "outcome": "ok",
+      "note": "Followed redirect; confirm destination still identifies the course."
+    },
+    {
+      "ids": [
+        "google-ml-clustering"
+      ],
+      "url": "https://developers.google.com/machine-learning/clustering",
+      "finalUrl": "https://developers.google.com/machine-learning/clustering?hl=pt-br",
+      "status": 200,
+      "outcome": "ok",
+      "note": "Followed redirect; confirm destination still identifies the course."
+    },
+    {
+      "ids": [
+        "google-ml-crash"
+      ],
+      "url": "https://developers.google.com/machine-learning/crash-course/",
+      "finalUrl": "https://developers.google.com/machine-learning/crash-course/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "google-decision-forests"
+      ],
+      "url": "https://developers.google.com/machine-learning/decision-forests",
+      "finalUrl": "https://developers.google.com/machine-learning/decision-forests",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "google-intro-ml"
+      ],
+      "url": "https://developers.google.com/machine-learning/intro-to-ml",
+      "finalUrl": "https://developers.google.com/machine-learning/intro-to-ml",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "google-ml-framing"
+      ],
+      "url": "https://developers.google.com/machine-learning/problem-framing",
+      "finalUrl": "https://developers.google.com/machine-learning/problem-framing?hl=zh-cn",
+      "status": 200,
+      "outcome": "ok",
+      "note": "Followed redirect; confirm destination still identifies the course."
+    },
+    {
+      "ids": [
+        "google-recommendations"
+      ],
+      "url": "https://developers.google.com/machine-learning/recommendation",
+      "finalUrl": "https://developers.google.com/machine-learning/recommendation",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "hf-agents"
+      ],
+      "url": "https://huggingface.co/learn/agents-course/en/unit0/introduction",
+      "finalUrl": "https://huggingface.co/learn/agents-course/en/unit0/introduction",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "hf-llm"
+      ],
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "finalUrl": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "hf-smol"
+      ],
+      "url": "https://huggingface.co/learn/smol-course/en/unit0/1",
+      "finalUrl": "https://huggingface.co/learn/smol-course/en/unit0/1",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-copilot-productivity"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/modules/boost-productivity-with-copilot/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/modules/boost-productivity-with-copilot/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-python-data-analysis"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-python/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-python/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-explore-genai"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-generative-ai/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/modules/explore-generative-ai/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-genai-intro"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-ml-concepts"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-copilot-start"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/modules/get-started-with-copilot/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/modules/get-started-with-copilot/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-effective-prompts"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-genai-apps"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/paths/develop-generative-ai-apps/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/paths/develop-generative-ai-apps/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "ms-python-fundamentals"
+      ],
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+      "finalUrl": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-ms-ai-fluency"
+      ],
+      "url": "https://learn.microsoft.com/fr-fr/training/paths/ai-fluency/",
+      "finalUrl": "https://learn.microsoft.com/fr-fr/training/paths/ai-fluency/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-aws-essentials"
+      ],
+      "url": "https://lecloudfacile.com/mes-cours/aws-essentials/",
+      "finalUrl": "https://lecloudfacile.com/mes-cours/aws-essentials/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "mit-computational-data"
+      ],
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/",
+      "finalUrl": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-aws-openclassrooms"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services",
+      "finalUrl": "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-python-analysis"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/6204541-initiez-vous-a-python-pour-l-analyse-de-donnees",
+      "finalUrl": "https://openclassrooms.com/fr/courses/6204541-initiez-vous-a-python-pour-l-analyse-de-donnees",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-python-oop"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/7150616-apprenez-la-programmation-orientee-objet-avec-python",
+      "finalUrl": "https://openclassrooms.com/fr/courses/7150616-apprenez-la-programmation-orientee-objet-avec-python",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-python-bases"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/7168871-apprenez-les-bases-du-langage-python",
+      "finalUrl": "https://openclassrooms.com/fr/courses/7168871-apprenez-les-bases-du-langage-python",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-python-data-libraries"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/7771531-decouvrez-les-librairies-python-pour-la-data-science",
+      "finalUrl": "https://openclassrooms.com/fr/courses/7771531-decouvrez-les-librairies-python-pour-la-data-science",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-ml-intro"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/8063076-initiez-vous-au-machine-learning",
+      "finalUrl": "https://openclassrooms.com/fr/courses/8063076-initiez-vous-au-machine-learning",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-chatgpt"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/8204091-utilisez-chatgpt-pour-ameliorer-votre-productivite",
+      "finalUrl": "https://openclassrooms.com/fr/courses/8204091-utilisez-chatgpt-pour-ameliorer-votre-productivite",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-ai-learning"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/8248141-optimisez-votre-apprentissage-avec-l-intelligence-artificielle",
+      "finalUrl": "https://openclassrooms.com/fr/courses/8248141-optimisez-votre-apprentissage-avec-l-intelligence-artificielle",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-statistical-tests"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/8313631-explorez-les-tests-statistiques",
+      "finalUrl": "https://openclassrooms.com/fr/courses/8313631-explorez-les-tests-statistiques",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-ml-supervised"
+      ],
+      "url": "https://openclassrooms.com/fr/courses/8431846-maitrisez-l-apprentissage-supervise",
+      "finalUrl": "https://openclassrooms.com/fr/courses/8431846-maitrisez-l-apprentissage-supervise",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "helsinki-python-intro"
+      ],
+      "url": "https://programming-26.mooc.fi/",
+      "finalUrl": "https://programming-26.mooc.fi/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "helsinki-python-advanced"
+      ],
+      "url": "https://programming-26.mooc.fi/part-8/",
+      "finalUrl": "https://programming-26.mooc.fi/part-8/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "aws-cloud-practitioner"
+      ],
+      "url": "https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials/8D79F3AVR7",
+      "finalUrl": "https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials/8D79F3AVR7",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "coursera-aws-architecting"
+      ],
+      "url": "https://www.coursera.org/learn/architecting-solutions-on-aws?specialization=aws-fundamentals",
+      "finalUrl": "https://www.coursera.org/learn/architecting-solutions-on-aws?specialization=aws-fundamentals",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "coursera-aws-practitioner"
+      ],
+      "url": "https://www.coursera.org/learn/aws-cloud-practitioner-essentials",
+      "finalUrl": "https://www.coursera.org/learn/aws-cloud-practitioner-essentials",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "coursera-aws-technical"
+      ],
+      "url": "https://www.coursera.org/learn/aws-cloud-technical-essentials",
+      "finalUrl": "https://www.coursera.org/learn/aws-cloud-technical-essentials",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "coursera-aws-migrating"
+      ],
+      "url": "https://www.coursera.org/learn/aws-fundamentals-migrating-to-the-cloud?specialization=aws-fundamentals",
+      "finalUrl": "https://www.coursera.org/learn/aws-fundamentals-migrating-to-the-cloud?specialization=aws-fundamentals",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "google-data-foundations"
+      ],
+      "url": "https://www.coursera.org/learn/foundations-data",
+      "finalUrl": "https://www.coursera.org/learn/foundations-data",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "dlai-advanced-rag"
+      ],
+      "url": "https://www.deeplearning.ai/alpha/short-courses/building-evaluating-advanced-rag",
+      "finalUrl": "https://www.deeplearning.ai/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "Followed redirect; confirm destination still identifies the course."
+    },
+    {
+      "ids": [
+        "dlai-langchain"
+      ],
+      "url": "https://www.deeplearning.ai/alpha/short-courses/langchain-for-llm-application-development/",
+      "finalUrl": "https://www.deeplearning.ai/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "Followed redirect; confirm destination still identifies the course."
+    },
+    {
+      "ids": [
+        "dlai-vector-databases"
+      ],
+      "url": "https://www.deeplearning.ai/alpha/short-courses/vector-databases-embeddings-applications",
+      "finalUrl": "https://www.deeplearning.ai/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "Followed redirect; confirm destination still identifies the course."
+    },
+    {
+      "ids": [
+        "dlai-prompt"
+      ],
+      "url": "https://www.deeplearning.ai/courses/chatgpt-prompt-eng",
+      "finalUrl": "https://www.deeplearning.ai/courses/chatgpt-prompt-eng",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "dlai-evaluate-genai"
+      ],
+      "url": "https://www.deeplearning.ai/courses/evaluating-debugging-generative-ai",
+      "finalUrl": "https://www.deeplearning.ai/courses/evaluating-debugging-generative-ai",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "dlai-chat-data"
+      ],
+      "url": "https://www.deeplearning.ai/courses/langchain-chat-with-your-data",
+      "finalUrl": "https://www.deeplearning.ai/courses/langchain-chat-with-your-data",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fcc-data-analysis"
+      ],
+      "url": "https://www.freecodecamp.org/learn/data-analysis-with-python",
+      "finalUrl": "https://www.freecodecamp.org/learn/data-analysis-with-python",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fcc-python"
+      ],
+      "url": "https://www.freecodecamp.org/learn/python-v9",
+      "finalUrl": "https://www.freecodecamp.org/learn/python-v9",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fcc-scientific-python"
+      ],
+      "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python",
+      "finalUrl": "https://www.freecodecamp.org/learn/scientific-computing-with-python",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fcc-aws-ccp"
+      ],
+      "url": "https://www.freecodecamp.org/news/aws-certified-cloud-practitioner-study-course-pass-the-exam-with-this-free-13-hour-course",
+      "finalUrl": "https://www.freecodecamp.org/news/aws-certified-cloud-practitioner-study-course-pass-the-exam-with-this-free-13-hour-course",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fcc-aws-bootcamp"
+      ],
+      "url": "https://www.freecodecamp.org/news/free-107-hour-aws-cloud-project-bootcamp",
+      "finalUrl": "https://www.freecodecamp.org/news/free-107-hour-aws-cloud-project-bootcamp",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fcc-intermediate-python"
+      ],
+      "url": "https://www.freecodecamp.org/news/intermediate-python-course",
+      "finalUrl": "https://www.freecodecamp.org/news/intermediate-python-course",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fcc-tensorflow"
+      ],
+      "url": "https://www.freecodecamp.org/news/massive-tensorflow-2-0-free-course",
+      "finalUrl": "https://www.freecodecamp.org/news/massive-tensorflow-2-0-free-course",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fcc-aws-developer"
+      ],
+      "url": "https://www.freecodecamp.org/news/pass-the-aws-developer-associate-exam-with-this-free-16-hour-course",
+      "finalUrl": "https://www.freecodecamp.org/news/pass-the-aws-developer-associate-exam-with-this-free-16-hour-course",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "inria-scikit-learn"
+      ],
+      "url": "https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/",
+      "finalUrl": "https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-python-code"
+      ],
+      "url": "https://www.fun-mooc.fr/fr/cours/apprendre-a-coder-avec-python/",
+      "finalUrl": "https://www.fun-mooc.fr/fr/cours/apprendre-a-coder-avec-python/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "fr-python-fundamentals"
+      ],
+      "url": "https://www.fun-mooc.fr/fr/cours/python-3-des-fondamentaux-aux-concepts-avances-du-langage/",
+      "finalUrl": "https://www.fun-mooc.fr/fr/cours/python-3-des-fondamentaux-aux-concepts-avances-du-langage/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-genai-intensive"
+      ],
+      "url": "https://www.kaggle.com/learn-guide/5-day-genai",
+      "finalUrl": "https://www.kaggle.com/learn-guide/5-day-genai",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-sql-advanced"
+      ],
+      "url": "https://www.kaggle.com/learn/advanced-sql/course",
+      "finalUrl": "https://www.kaggle.com/learn/advanced-sql/course",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-computer-vision"
+      ],
+      "url": "https://www.kaggle.com/learn/computer-vision",
+      "finalUrl": "https://www.kaggle.com/learn/computer-vision",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-data-cleaning"
+      ],
+      "url": "https://www.kaggle.com/learn/data-cleaning",
+      "finalUrl": "https://www.kaggle.com/learn/data-cleaning",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-data-viz"
+      ],
+      "url": "https://www.kaggle.com/learn/data-visualization",
+      "finalUrl": "https://www.kaggle.com/learn/data-visualization",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-feature-engineering"
+      ],
+      "url": "https://www.kaggle.com/learn/feature-engineering/course",
+      "finalUrl": "https://www.kaggle.com/learn/feature-engineering/course",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-geospatial"
+      ],
+      "url": "https://www.kaggle.com/learn/geospatial-analysis",
+      "finalUrl": "https://www.kaggle.com/learn/geospatial-analysis",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-intermediate-ml"
+      ],
+      "url": "https://www.kaggle.com/learn/intermediate-machine-learning",
+      "finalUrl": "https://www.kaggle.com/learn/intermediate-machine-learning",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-deep-learning"
+      ],
+      "url": "https://www.kaggle.com/learn/intro-to-deep-learning/",
+      "finalUrl": "https://www.kaggle.com/learn/intro-to-deep-learning/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-intro-ml"
+      ],
+      "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+      "finalUrl": "https://www.kaggle.com/learn/intro-to-machine-learning",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-intro-programming"
+      ],
+      "url": "https://www.kaggle.com/learn/intro-to-programming/course",
+      "finalUrl": "https://www.kaggle.com/learn/intro-to-programming/course",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-sql-intro"
+      ],
+      "url": "https://www.kaggle.com/learn/intro-to-sql",
+      "finalUrl": "https://www.kaggle.com/learn/intro-to-sql",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-pandas"
+      ],
+      "url": "https://www.kaggle.com/learn/pandas",
+      "finalUrl": "https://www.kaggle.com/learn/pandas",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-python"
+      ],
+      "url": "https://www.kaggle.com/learn/python",
+      "finalUrl": "https://www.kaggle.com/learn/python",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "kaggle-time-series"
+      ],
+      "url": "https://www.kaggle.com/learn/time-series",
+      "finalUrl": "https://www.kaggle.com/learn/time-series",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "cisco-data-analytics"
+      ],
+      "url": "https://www.netacad.com/courses/data-analytics-essentials",
+      "finalUrl": "https://www.netacad.com/courses/data-analytics-essentials",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "cisco-data-science-python"
+      ],
+      "url": "https://www.netacad.com/courses/data-science-essentials-with-python?courseLang=en-US",
+      "finalUrl": "https://www.netacad.com/courses/data-science-essentials-with-python?courseLang=en-US",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "cisco-python-1"
+      ],
+      "url": "https://www.netacad.com/courses/python-essentials-1?courseLang=en-US",
+      "finalUrl": "https://www.netacad.com/courses/python-essentials-1?courseLang=en-US",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "cisco-python-2"
+      ],
+      "url": "https://www.netacad.com/courses/python-essentials-2?courseLang=en-US",
+      "finalUrl": "https://www.netacad.com/courses/python-essentials-2?courseLang=en-US",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "mit-python-2022"
+      ],
+      "url": "https://www.ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+      "finalUrl": "https://www.ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "py4e"
+      ],
+      "url": "https://www.py4e.com/",
+      "finalUrl": "https://www.py4e.com/",
+      "status": 200,
+      "outcome": "ok",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-python-automate"
+      ],
+      "url": "https://www.udemy.com/course/automate/",
+      "finalUrl": "https://www.udemy.com/course/automate/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-aws-developer"
+      ],
+      "url": "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/",
+      "finalUrl": "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-aws-saa"
+      ],
+      "url": "https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/",
+      "finalUrl": "https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-ml-az"
+      ],
+      "url": "https://www.udemy.com/course/machinelearning/",
+      "finalUrl": "https://www.udemy.com/course/machinelearning/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-excel"
+      ],
+      "url": "https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/",
+      "finalUrl": "https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-aws-intro-free"
+      ],
+      "url": "https://www.udemy.com/course/overview-of-aws-services/",
+      "finalUrl": "https://www.udemy.com/course/overview-of-aws-services/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-prompt-bootcamp"
+      ],
+      "url": "https://www.udemy.com/course/prompt-engineering-for-ai/",
+      "finalUrl": "https://www.udemy.com/course/prompt-engineering-for-ai/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-python-deep-dive"
+      ],
+      "url": "https://www.udemy.com/course/python-3-deep-dive-part-1/",
+      "finalUrl": "https://www.udemy.com/course/python-3-deep-dive-part-1/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    },
+    {
+      "ids": [
+        "udemy-data-science-python"
+      ],
+      "url": "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/",
+      "finalUrl": "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/",
+      "status": 403,
+      "outcome": "blocked, check manually",
+      "note": "HTTP reachability only; a 200 response does not verify course content or enrollment."
+    }
+  ]
+}

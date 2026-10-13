@@ -1,14 +1,17 @@
 import type { Language } from '../i18n'
 
+export type Goal = 'python-programming' | 'machine-learning' | 'generative-ai-and-prompt-engineering' | 'aws-cloud' | 'data-analysis'
+export type Level = 'new' | 'basics' | 'intermediate'
+
 export interface Course {
   id: string
   title: string
   provider: string
   url: string
-  goals: string[]
-  level: 'new' | 'basics' | 'intermediate'
-  hours: number
-  cost: 'free' | 'paid'
+  goals: Goal[]
+  level: Level | null
+  hours: number | null
+  cost: 'free' | 'paid' | null
   priceNote?: string
   dataWeight: 'low' | 'medium' | 'high'
   language: Language
@@ -17,14 +20,11 @@ export interface Course {
   lastVerified: string | null
 }
 
-// Draft records retain all schema fields but allow unknown values until sourced.
-export type DraftCourse = Omit<Course, 'level' | 'hours' | 'cost' | 'dataWeight' | 'language' | 'format'> & {
-  [K in 'level' | 'hours' | 'cost' | 'dataWeight' | 'language' | 'format']: Course[K] | null
-}
+export type DraftCourse = Course
 
 export interface LearnerProfile {
-  goal: string
-  level: Course['level']
+  goal: Goal
+  level: Level
   why: string
   hoursPerWeek: number
   device: 'phone' | 'laptop'

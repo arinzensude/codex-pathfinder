@@ -162,8 +162,8 @@ Data: src/data/catalog.json. Saved state: localStorage.
 i18n: src/i18n/en.json and src/i18n/fr.json. No hard-coded UI strings.
 
 ## Catalog schema (src/data/catalog.json)
-{ id, title, provider, url, goals: string[], level: "new"|"basics"|"intermediate",
-  hours: number, cost: "free"|"paid", priceNote?: string,
+{ id, title, provider, url, goals: string[], level: "new"|"basics"|"intermediate"|null,
+  hours: number|null, cost: "free"|"paid"|null, priceNote?: string,
   dataWeight: "low"|"medium"|"high", language: "en"|"fr",
   format: "video"|"text"|"interactive",
   sourceNote: string,            // what was checked on the course page
@@ -182,7 +182,10 @@ Path = top 3-5 by score, then ordered by level (new first).
 
 ## Rules
 - Never invent courses or URLs. Only use details stated on the course page.
-- Never guess prices, hours or levels; leave the field empty and add a TODO.
+- Never guess prices, hours or levels; set the field to null and list it in docs/catalog-todo.md.
+- Goals use only: python-programming, machine-learning, generative-ai-and-prompt-engineering, aws-cloud, data-analysis.
+- The app only displays catalog entries where lastVerified is not null.
+- Scoring treats a null field as no points for that factor, with a reason saying the detail is unknown.
 - lastVerified stays null until a human has checked the entry.
 - Mobile-first, works at 360px width, large tap targets.
 - Text-first, no heavy images; the app must work offline after first load.
@@ -192,7 +195,7 @@ Path = top 3-5 by score, then ordered by level (new first).
 ### Prompts
 
 1. **Scaffold:** "Read AGENTS.md. Scaffold the project with React, Vite, TypeScript, Tailwind, vite-plugin-pwa and Vitest. Create the folder structure, an empty catalog.json with two placeholder entries matching the schema, empty en/fr translation files, and a simple router for six screens. Make `npm run dev` and `npm test` work."
-2. **Catalog draft (web search on):** "Search the web for 30 free or low-cost beginner-to-intermediate data analysis courses suitable for learners in Africa with limited data. Prefer providers such as freeCodeCamp, Khan Academy, Google, Coursera (free audit), edX, Kaggle Learn, Alison and YouTube channels from universities or recognised organisations. Include at least 5 in French. Replace the placeholders in src/data/catalog.json with entries that follow the schema in AGENTS.md, using only details stated on each course page. Fill `sourceNote` with what you checked and set `lastVerified` to null. Do not guess prices, hours or levels: leave the field empty and list it in a TODO. Then write scripts/check-links.ts to request every URL, run it, and report any that fail."
+2. **Catalog draft (web search on):** "Search the web for about 100 free or low-cost courses across these goals, roughly 20 per goal, working through one goal at a time and saving entries to src/data/catalog.json after each goal: python-programming, machine-learning, generative-ai-and-prompt-engineering, aws-cloud, data-analysis. Use only these exact strings in goals; a course may have more than one. Cover levels from new to intermediate for each goal. Prefer credible providers such as freeCodeCamp, Kaggle Learn, Google, Microsoft Learn, AWS Skill Builder, AWS Educate, DeepLearning.AI short courses, fast.ai, Hugging Face Learn, Coursera (free audit), edX, Khan Academy, Alison, and university or official YouTube channels. Include Udemy courses, both free and paid, but only those rated 4.5 or higher with at least 1,000 ratings; record the rating and number of ratings in sourceNote. For paid Udemy courses set cost to 'paid' and priceNote to 'Price varies; frequent sales' rather than a fixed price. Include at least 2 French courses per goal where they exist; if fewer exist, say so instead of padding. Replace the placeholders, follow the schema in AGENTS.md, and use only details stated on each course page. Fill sourceNote and set lastVerified to null. Never guess prices, hours or levels: set the field to null and list the course id and missing field in docs/catalog-todo.md (JSON cannot hold comments). Then write scripts/check-links.ts, run it, and report failures; report 403 responses separately as 'blocked, check manually' rather than as broken. Finish with a summary table of counts per goal, level and language."
 3. **Onboarding:** "Build screens 1–4 (Welcome with language toggle, Goal and level, Why, Constraints) as a step-by-step flow with a progress bar and back buttons. Build the learner profile in one state object. Goals come from the unique `goals` values in catalog.json. All strings come from the i18n files."
 4. **Scoring:** "Implement src/lib/score.ts exactly as specified in AGENTS.md. Export `scoreCourse(course, profile)` returning `{score, reasons}` and `buildPath(catalog, profile)` returning 3–5 courses. Write Vitest tests covering each factor, a profile with very limited data and free-only budget, and the case where no course fits well."
 5. **Path screen:** "Build screen 5: the learner's 'why' pinned at the top, then the path as numbered cards showing title, provider, source link (opens in a new tab), hours, cost, data weight, language, last verified date and the reasons from score.ts. Build screen 6: save the profile and path to localStorage, show 'Saved on this device, works offline', and a preview card labelled 'Coming next' showing a sample nudge that quotes the learner's why and names step 1. On app load, if a saved path exists, open it directly."

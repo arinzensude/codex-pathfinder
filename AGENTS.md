@@ -12,8 +12,8 @@ Data: src/data/catalog.json. Saved state: localStorage.
 i18n: src/i18n/en.json and src/i18n/fr.json. No hard-coded UI strings.
 
 ## Catalog schema (src/data/catalog.json)
-{ id, title, provider, url, goals: string[], level: "new"|"basics"|"intermediate",
-  hours: number, cost: "free"|"paid", priceNote?: string,
+{ id, title, provider, url, goals: string[], level: "new"|"basics"|"intermediate"|null,
+  hours: number|null, cost: "free"|"paid"|null, priceNote?: string,
   dataWeight: "low"|"medium"|"high", language: "en"|"fr",
   format: "video"|"text"|"interactive",
   sourceNote: string,            // what was checked on the course page
@@ -32,12 +32,14 @@ Path = top 3-5 by score, then ordered by level (new first).
 
 ## Rules
 - Never invent courses or URLs. Only use details stated on the course page.
-- Never guess prices, hours or levels; leave the field empty and add a TODO.
+- Never guess prices, hours or levels; set the field to null and list it in docs/catalog-todo.md.
+- Goals use only: python-programming, machine-learning, generative-ai-and-prompt-engineering, aws-cloud, data-analysis.
+- The app only displays catalog entries where lastVerified is not null.
+- Scoring treats a null field as no points for that factor, with a reason saying the detail is unknown.
 - lastVerified stays null until a human has checked the entry.
 - Mobile-first, works at 360px width, large tap targets.
 - Text-first, no heavy images; the app must work offline after first load.
 - Keep components small; write tests for score.ts.
-- The app only displays catalog entries where lastVerified is not null.
 
 ## Reference
 docs/pathfinder-plan.md is the full project plan and roadmap, for context only.
