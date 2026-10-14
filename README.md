@@ -1,4 +1,26 @@
-# Pathfinder scaffold
+# Pathfinder
+
+**[Try the live demo](https://pathfinder.aribabaindustries.com/)**
+
+A mobile-first learning-path advisor with English/French support and offline
+access. No account is required.
+
+## Try the app
+
+1. Choose English or French, then select **Get started**.
+2. Choose your learning goal and current level.
+3. Explain why you want to learn, then set your available time, device, data and budget.
+4. Review your recommended path, course levels and fit explanations. Optional refreshers appear when relevant.
+5. Select **Save on this device** to keep your path. It opens automatically when you return.
+
+To test offline access, first load the demo online and allow its offline cache
+to finish installing. Save a path, disconnect, then reload. Course websites
+still require an internet connection. **Start over** clears your answers and
+saved path while keeping your chosen language. After saving a path with at least
+one recommended course, the saved-path screen shows a **Coming next** sample
+nudge below the courses and refreshers. It previews a future feature.
+
+## Local development
 
 Requires Node.js 22.12+ or 24+ and npm (verified with Node.js 24).
 
@@ -27,6 +49,8 @@ npm run check-links
 - `docs/catalog-summary.md`: counts, evidence limitations, normalization policy
 - `docs/catalog-todo.md`: all missing hours, cost, and level fields
 - `docs/catalog-link-report.md`: HTTP outcomes including separately reported 403s
+
+## App behavior and saved state
 
 Hash routes: `#/`, `#/goal`, `#/why`, `#/constraints`, `#/path`, `#/saved`.
 Screens 1–4 form a guided flow: Welcome, Goal and level, Why, Constraints.
