@@ -13,10 +13,14 @@ export default function Onboarding({ step, profile, update, goals }: {
   const [error, setError] = useState('')
   const t = (key: string) => translate(key, profile.language)
   const index = steps.indexOf(step)
+  function invalid(key: string, selector: string) {
+    setError(key)
+    document.querySelector<HTMLElement>(selector)?.focus()
+  }
   function next() {
-    if (step === 'goal' && !goals.includes(profile.goal as Goal)) { setError('errors.goal'); return }
-    if (step === 'why' && !profile.why.trim()) { setError('errors.why'); return }
-    if (step === 'constraints' && !validHours(profile.hoursPerWeek)) { setError('errors.hours'); return }
+    if (step === 'goal' && !goals.includes(profile.goal as Goal)) { invalid('errors.goal', 'input[name="goal"]'); return }
+    if (step === 'why' && !profile.why.trim()) { invalid('errors.why', '#why'); return }
+    if (step === 'constraints' && !validHours(profile.hoursPerWeek)) { invalid('errors.hours', '#hours'); return }
     setError('')
     navigate(index === 3 ? '/path' : '/' + steps[index + 1])
   }
@@ -26,7 +30,7 @@ export default function Onboarding({ step, profile, update, goals }: {
     <form noValidate onSubmit={event => { event.preventDefault(); next() }} className="space-y-6">
       {step === 'welcome' && <div className="rounded-xl bg-teal-50 p-4 leading-relaxed text-teal-900">{t('welcome.note')}</div>}
       {step === 'goal' && <>
-        <Choices name="goal" label={t('goal.label')} options={goals} value={profile.goal} onChange={goal => update({ goal })} text={goal => t('goals.' + goal)} />
+        <Choices name="goal" label={t('goal.label')} errorId={error === 'errors.goal' ? 'form-error' : undefined} options={goals} value={profile.goal} onChange={goal => update({ goal })} text={goal => t('goals.' + goal)} />
         <Choices name="level" label={t('level.label')} options={['new', 'basics', 'intermediate'] as const} value={profile.level} onChange={level => update({ level })} text={level => t('levels.' + level)} />
       </>}
       {step === 'why' && <div>
@@ -43,7 +47,7 @@ export default function Onboarding({ step, profile, update, goals }: {
         <Choices name="budget" label={t('constraints.budget')} options={['free_only', 'can_pay'] as const} value={profile.budget} onChange={budget => update({ budget })} text={value => t('budget.' + value)} />
       </>}
       <div id="form-error" role={error ? 'alert' : undefined} className="text-sm font-medium text-red-700">{error && t(error)}</div>
-      <div className="flex gap-3 border-t border-slate-100 pt-5">
+      <div className="flex flex-col gap-3 border-t border-slate-100 pt-5 sm:flex-row">
         {index > 0 && <button type="button" onClick={() => navigate(index === 1 ? '/' : '/' + steps[index - 1])} className="min-h-12 rounded-xl border border-slate-300 px-5 font-semibold">{t('actions.back')}</button>}
         <button type="submit" className="min-h-12 flex-1 rounded-xl bg-teal-700 px-5 font-semibold text-white hover:bg-teal-800">{t(step === 'welcome' ? 'actions.start' : step === 'constraints' ? 'actions.finish' : 'actions.continue')}</button>
       </div>

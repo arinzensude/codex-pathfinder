@@ -2,9 +2,11 @@ import { translate } from '../i18n'
 import { formatDuration } from '../lib/duration'
 import { scoreCourse } from '../lib/score'
 import type { Course, LearnerProfile } from '../types'
+import { useId } from 'react'
 
 export default function CourseCard({ course, profile, number }: { course: Course; profile: LearnerProfile; number?: number }) {
   const t = (key: string) => translate(key, profile.language)
+  const titleId = useId()
   const { score, reasons } = scoreCourse(course, profile)
   const details = [
     ['course.duration', formatDuration(course.hours, profile.language)],
@@ -16,9 +18,9 @@ export default function CourseCard({ course, profile, number }: { course: Course
   ]
   return <li className="min-w-0 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
     {number !== undefined && <p className="mb-2 text-sm font-bold text-teal-800">{translate('path.step', profile.language, { number })}</p>}
-    <h2 className="break-words text-xl font-semibold">{course.title}</h2>
+    <h2 id={titleId} className="break-words text-xl font-semibold">{course.title}</h2>
     <p className="mt-1 break-words text-slate-600">{course.provider}</p>
-    <a href={course.url} target="_blank" rel="noopener noreferrer" className="my-3 inline-flex min-h-11 items-center font-semibold text-teal-800 underline underline-offset-4">{t('course.source')}</a>
+    <a href={course.url} target="_blank" rel="noopener noreferrer" aria-describedby={titleId} className="my-3 inline-flex min-h-11 min-w-11 items-center font-semibold text-teal-800 underline underline-offset-4">{t('course.source')}</a>
     <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
       {details.map(([label, value]) => <div key={label}><dt className="text-slate-500">{t(label)}</dt><dd className="mt-1 break-words font-medium">{value}</dd></div>)}
     </dl>

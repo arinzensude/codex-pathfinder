@@ -40,6 +40,8 @@
   "budget.free_only": "Free courses only",
   "budget.can_pay": "I can pay for a course",
   "actions.start": "Get started",
+  "actions.startOver": "Start over",
+  "errors.reset": "Could not clear your saved path. Check that browser storage is available, then try again.",
   "actions.continue": "Continue",
   "actions.back": "Back",
   "actions.finish": "Finish profile",

@@ -50,6 +50,10 @@ unknown-level courses, preserving recommendations offline without relying on
 later catalog additions. Older saves are normalized to these rules on restore.
 Malformed saved data is ignored; failed writes show an error without confirming
 a save. The saved screen includes a clearly labelled sample nudge preview.
+**Start over / Recommencer** clears the profile and saved path while retaining
+the language preference. A failed storage reset leaves the current path intact
+and displays a localized error. All six screens are checked at 360px in both
+languages, including labelled controls, 44px tap targets and keyboard focus.
 
 Unknown hours, cost, and level values are `null`, as specified in AGENTS.md.
 `lastVerified` remains null until human verification. Research and an HTTP 200

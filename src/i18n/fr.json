@@ -40,6 +40,8 @@
   "budget.free_only": "Cours gratuits uniquement",
   "budget.can_pay": "Je peux payer un cours",
   "actions.start": "Commencer",
+  "actions.startOver": "Recommencer",
+  "errors.reset": "Impossible d’effacer votre parcours enregistré. Vérifiez que le stockage du navigateur est disponible, puis réessayez.",
   "actions.continue": "Continuer",
   "actions.back": "Retour",
   "actions.finish": "Terminer le profil",

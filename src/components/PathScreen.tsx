@@ -13,7 +13,7 @@ export default function PathScreen({ profile, path, refreshers = [], saved = fal
     {saved && <p role="status" className="rounded-xl bg-teal-50 p-4 font-semibold text-teal-900">{t('saved.confirmation')}</p>}
     <aside aria-label={t('path.why')} className="sticky top-0 z-10 rounded-xl border border-teal-200 bg-teal-50 p-4 shadow-sm">
       <h2 className="text-sm font-semibold text-teal-800">{t('path.why')}</h2>
-      <p className="mt-2 max-h-32 overflow-y-auto whitespace-pre-wrap break-words text-teal-950">{profile.why}</p>
+      <p tabIndex={0} aria-label={t('path.why')} className="mt-2 max-h-32 overflow-y-auto whitespace-pre-wrap break-words text-teal-950">{profile.why}</p>
     </aside>
     {path.length > 0 && <p className="text-sm leading-relaxed text-slate-600">{t('path.ordering')}</p>}
     {path.length > 0 && path.length < 3 && <p role="status" className="text-sm text-slate-600">{t('path.shortage')}</p>}

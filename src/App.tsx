@@ -8,7 +8,7 @@ import { catalogGoals, initialProfile, type ProfileDraft } from './lib/profile'
 import { screens } from './lib/routes'
 import type { Course } from './types'
 import { buildPath, supplementaryCourses } from './lib/score'
-import { completeProfile, loadSavedPath, savePath } from './lib/storage'
+import { completeProfile, loadSavedPath, savePath, SAVED_PATH_KEY } from './lib/storage'
 import { loadLanguage, saveLanguage } from './lib/language'
 
 export default function App({ courses = catalog as Course[] }: { courses?: Course[] }) {
@@ -20,6 +20,8 @@ export default function App({ courses = catalog as Course[] }: { courses?: Cours
   }))
   const [languageError, setLanguageError] = useState(false)
   const [saveError, setSaveError] = useState('')
+  const [resetError, setResetError] = useState(false)
+  const [flowVersion, setFlowVersion] = useState(0)
   const navigate = useNavigate()
   const restored = useRef(false)
   const goals = useMemo(() => catalogGoals(courses), [courses])
@@ -49,6 +51,16 @@ export default function App({ courses = catalog as Course[] }: { courses?: Cours
       navigate('/saved')
     } catch { setSaveError('saved.error') }
   }
+  function startOver() {
+    try { localStorage.removeItem(SAVED_PATH_KEY) }
+    catch { setResetError(true); return }
+    setSaved(null)
+    setProfile({ ...initialProfile, language: profile.language })
+    setSaveError('')
+    setResetError(false)
+    setFlowVersion(current => current + 1)
+    navigate('/', { replace: true })
+  }
   useEffect(() => {
     if (restored.current) return
     restored.current = true
@@ -58,15 +70,19 @@ export default function App({ courses = catalog as Course[] }: { courses?: Cours
     document.documentElement.lang = profile.language
     document.title = translate('app.name', profile.language)
   }, [profile.language])
-  useEffect(() => { document.querySelector<HTMLElement>('h1')?.focus() }, [pathname])
+  useEffect(() => { document.querySelector<HTMLElement>('h1')?.focus() }, [pathname, flowVersion])
   const progress = translate('progress.step', profile.language, { current: stepIndex + 1, total: 4 })
-  return <div className="mx-auto max-w-xl px-4 py-6 sm:py-10">
+  return <div className="mx-auto min-w-0 max-w-xl px-4 py-6 sm:py-10">
     <header className="mb-6 flex flex-wrap items-center justify-between gap-3">
       <span className="text-xl font-bold tracking-tight text-teal-800">{t('app.name')}</span>
       <div role="group" aria-label={t('language.label')} className="flex rounded-xl border border-slate-300 bg-white p-1">
         {(['en', 'fr'] as const).map(language => <button type="button" key={language} aria-pressed={profile.language === language} onClick={() => update({ language })} className={`min-h-11 rounded-lg px-3 text-sm font-semibold ${profile.language === language ? 'bg-teal-700 text-white' : 'text-slate-700'}`}>{t('language.' + language)}</button>)}
       </div>
     </header>
+    <div className="mb-4 flex justify-end">
+      <button type="button" onClick={startOver} className="min-h-11 min-w-11 rounded-lg px-3 font-semibold text-teal-800 underline underline-offset-4">{t('actions.startOver')}</button>
+    </div>
+    {resetError && <p role="alert" className="mb-4 text-sm text-red-700">{t('errors.reset')}</p>}
     {languageError && <p role="alert" className="mb-4 text-sm text-red-700">{t('language.saveError')}</p>}
     {stepIndex >= 0 && stepIndex < 4 && <div className="mb-6">
       <p className="mb-2 text-sm font-medium text-slate-600">{progress}</p>
@@ -78,7 +94,7 @@ export default function App({ courses = catalog as Course[] }: { courses?: Cours
       {steps.map((step, index) => <Route key={step} path={screens[index].path} element={
         index > 1 && !profile.goal ? <Navigate to="/goal" replace /> :
         index > 2 && !profile.why.trim() ? <Navigate to="/why" replace /> :
-        <Onboarding key={step} step={step} profile={profile} update={update} goals={goals} />
+        <Onboarding key={step + flowVersion} step={step} profile={profile} update={update} goals={goals} />
       } />)}
       <Route path="/path" element={completeProfile(profile)
         ? <PathScreen profile={profile} path={path} {...extras} onSave={save} error={saveError} />

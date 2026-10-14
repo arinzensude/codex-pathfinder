@@ -31,11 +31,33 @@ test('precaches install assets and catalog, and completes all six screens offlin
   })
   expect(cached.count).toBe(100)
   expect(cached.dimensions).toEqual([[192, 192], [512, 512], [512, 512]])
+  let screenNumber = 0
+  const audit = async (language: string) => {
+    const issues = await page.evaluate(() => {
+      const issues: string[] = []
+      if (document.documentElement.scrollWidth > innerWidth) issues.push('Horizontal overflow')
+      for (const element of document.querySelectorAll<HTMLElement>('button, a, input, textarea, summary')) {
+        if (!element.checkVisibility()) continue
+        const target = element.matches('input[type="radio"]') ? element.closest('label')! : element
+        const rect = target.getBoundingClientRect()
+        if (rect.width < 44 || rect.height < 44) issues.push('Small target: ' + (target.textContent || element.id))
+        const named = element.getAttribute('aria-label') || element.textContent?.trim() ||
+          (element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement ? element.labels?.[0]?.textContent : '')
+        if (!named) issues.push('Unnamed control: ' + element.tagName)
+      }
+      return issues
+    })
+    expect(issues).toEqual([])
+    await page.screenshot({ path: `test-results/mobile-${screenNumber}-${language}.png`, fullPage: true })
+  }
   const toggle = async (english: string, french: string) => {
+    screenNumber++
     await page.getByRole('button', { name: 'Français', exact: true }).click()
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(french)
+    await audit('fr')
     await page.getByRole('button', { name: 'English', exact: true }).click()
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(english)
+    await audit('en')
   }
   await toggle('Find your next learning step', 'Trouvez votre prochaine étape')
   await page.getByRole('button', { name: 'Get started' }).click()
@@ -59,4 +81,17 @@ test('precaches install assets and catalog, and completes all six screens offlin
   await expect(page.getByRole('link', { name: 'Ouvrir la source du cours (nouvel onglet)' })).toHaveCount(5)
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   await page.screenshot({ path: 'test-results/saved-offline-360.png', fullPage: true })
+  await page.getByRole('button', { name: 'Recommencer' }).click()
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Trouvez votre prochaine étape')
+  await expect(page.getByRole('heading', { level: 1 })).toBeFocused()
+  expect(await page.evaluate(() => localStorage.getItem('pathfinder.savedPath.v1'))).toBeNull()
+  await page.keyboard.press('Tab')
+  const focus = await page.evaluate(() => {
+    const element = document.activeElement!
+    return { visible: element.matches(':focus-visible'), style: getComputedStyle(element).outlineStyle }
+  })
+  expect(focus.visible).toBe(true)
+  expect(focus.style).not.toBe('none')
+  await page.reload()
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Trouvez votre prochaine étape')
 })
