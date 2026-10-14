@@ -7,12 +7,12 @@ import { translate } from './i18n'
 import { catalogGoals, initialProfile, type ProfileDraft } from './lib/profile'
 import { screens } from './lib/routes'
 import type { Course } from './types'
-import { buildPath } from './lib/score'
+import { buildPath, supplementaryCourses } from './lib/score'
 import { completeProfile, loadSavedPath, savePath } from './lib/storage'
 import { loadLanguage, saveLanguage } from './lib/language'
 
 export default function App({ courses = catalog as Course[] }: { courses?: Course[] }) {
-  const [startupSaved] = useState(loadSavedPath)
+  const [startupSaved] = useState(() => loadSavedPath(courses))
   const [saved, setSaved] = useState(startupSaved)
   const [profile, setProfile] = useState<ProfileDraft>(() => ({
     ...(startupSaved?.profile ?? initialProfile),
@@ -24,6 +24,7 @@ export default function App({ courses = catalog as Course[] }: { courses?: Cours
   const restored = useRef(false)
   const goals = useMemo(() => catalogGoals(courses), [courses])
   const path = useMemo(() => completeProfile(profile) ? buildPath(courses, profile) : [], [courses, profile])
+  const extras = useMemo(() => completeProfile(profile) ? supplementaryCourses(courses, profile) : { refreshers: [] }, [courses, profile])
   const { pathname } = useLocation()
   const stepIndex = screens.findIndex(screen => screen.path === pathname)
   const t = (key: string) => translate(key, profile.language)
@@ -35,15 +36,15 @@ export default function App({ courses = catalog as Course[] }: { courses?: Cours
     }
     if (patch.language && saved) {
       try {
-        setSaved(savePath({ ...saved.profile, language: patch.language }, saved.path))
+        setSaved(savePath({ ...saved.profile, language: patch.language }, saved.path, saved))
         setSaveError('')
       } catch { setSaveError('saved.error') }
     }
   }
   function save() {
-    if (!completeProfile(profile) || path.length === 0) return
+    if (!completeProfile(profile) || path.length + extras.refreshers.length === 0) return
     try {
-      setSaved(savePath(profile, path))
+      setSaved(savePath(profile, path, extras))
       setSaveError('')
       navigate('/saved')
     } catch { setSaveError('saved.error') }
@@ -80,10 +81,10 @@ export default function App({ courses = catalog as Course[] }: { courses?: Cours
         <Onboarding key={step} step={step} profile={profile} update={update} goals={goals} />
       } />)}
       <Route path="/path" element={completeProfile(profile)
-        ? <PathScreen profile={profile} path={path} onSave={save} error={saveError} />
+        ? <PathScreen profile={profile} path={path} {...extras} onSave={save} error={saveError} />
         : <Navigate to={profile.goal ? '/constraints' : '/goal'} replace />} />
       <Route path="/saved" element={saved
-        ? <PathScreen profile={{ ...saved.profile, language: profile.language }} path={saved.path} saved error={saveError} />
+        ? <PathScreen profile={{ ...saved.profile, language: profile.language }} path={saved.path} refreshers={saved.refreshers} saved error={saveError} />
         : <Navigate to={completeProfile(profile) ? '/path' : '/'} replace />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

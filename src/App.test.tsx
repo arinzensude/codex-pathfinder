@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { afterEach, expect, it, vi } from 'vitest'
-import { cleanup, render, screen } from '@testing-library/react'
+import { cleanup, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import App from './App'
@@ -140,4 +140,35 @@ it('keeps the language change usable and reports a failed preference write', asy
   await userEvent.setup().click(screen.getByRole('button', { name: 'Français' }))
   expect(document.documentElement.lang).toBe('fr')
   expect(screen.getByRole('alert').textContent).toBe(fr['language.saveError'])
+})
+it('shows level metadata and relevant refreshers while excluding unknown levels in both languages', async () => {
+  const user = userEvent.setup()
+  const unknown = { ...fixtureCourses[0], id: 'unknown', title: 'Unknown fixture', level: null }
+  const learner = { ...initialProfile, goal: 'python-programming', level: 'basics', why: 'Build useful tools' }
+  localStorage.setItem(SAVED_PATH_KEY, JSON.stringify({ version: 1, profile: learner, path: [...fixtureCourses, unknown] }))
+  render(<MemoryRouter><App courses={[...fixtureCourses, unknown]} /></MemoryRouter>)
+  const main = screen.getByRole('list', { name: en['path.courses'] })
+  expect(within(main).getByText('Long fixture')).toBeTruthy()
+  expect(within(main).queryByText('Short fixture')).toBeNull()
+  expect(within(main).queryByText('Unknown fixture')).toBeNull()
+  expect(screen.getByText(en['path.shortage'])).toBeTruthy()
+  await user.click(screen.getByText(/Optional refreshers/))
+  expect(within(screen.getByRole('list', { name: en['path.refreshers'] })).getByText('Short fixture')).toBeTruthy()
+  expect(screen.queryByText('Unknown fixture')).toBeNull()
+  const labels = within(main).getAllByRole('term').map(term => term.textContent)
+  expect(labels.slice(-2)).toEqual(['Level', 'Last verified'])
+  expect(within(main).getByText(en['courseLevel.basics'])).toBeTruthy()
+  expect(screen.getByText(en['path.ordering'])).toBeTruthy()
+  await user.click(screen.getByRole('button', { name: 'Français' }))
+  expect(screen.getByText(/Révisions facultatives/)).toBeTruthy()
+  expect(screen.queryByText('Unknown fixture')).toBeNull()
+  expect(screen.getByText(fr['path.ordering'])).toBeTruthy()
+  expect(within(screen.getByRole('list', { name: fr['path.courses'] })).getByText(fr['courseLevel.basics'])).toBeTruthy()
+  expect(loadSavedPath()?.path.map(course => course.id)).toEqual(['long'])
+  await user.click(screen.getByRole('link', { name: fr['actions.edit'] }))
+  await user.click(screen.getByRole('button', { name: fr['actions.finish'] }))
+  expect(screen.getByRole('heading', { level: 1 }).textContent).toBe(fr['screens.path.title'])
+  expect(within(screen.getByRole('list', { name: fr['path.courses'] })).getByText('Long fixture')).toBeTruthy()
+  expect(screen.getByText(/Révisions facultatives/)).toBeTruthy()
+  expect(screen.queryByText('Unknown fixture')).toBeNull()
 })

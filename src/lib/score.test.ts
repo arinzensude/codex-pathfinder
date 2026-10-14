@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { translate } from '../i18n'
 import type { Course, LearnerProfile } from '../types'
-import { buildPath, scoreCourse } from './score'
+import { buildPath, scoreCourse, supplementaryCourses } from './score'
 
 const profile: LearnerProfile = {
   goal: 'python-programming', level: 'new', why: 'Automate tasks', hoursPerWeek: 4,
@@ -90,7 +90,7 @@ describe('buildPath', () => {
       entry('intermediate', { level: 'intermediate' }), entry('basics', { level: 'basics' }),
       entry('new-a'), entry('new-b'), entry('unknown', { level: null })]
     expect(buildPath(catalog, profile).map(item => item.id))
-      .toEqual(['new-a', 'new-b', 'basics', 'intermediate', 'unknown'])
+      .toEqual(['new-a', 'new-b', 'basics', 'intermediate', 'excluded'])
     expect(catalog.map(item => item.id)).toEqual(['excluded', 'intermediate', 'basics', 'new-a', 'new-b', 'unknown'])
   })
   it('returns poor matches with caution reasons when no course fits well', () => {
@@ -115,5 +115,35 @@ describe('buildPath', () => {
       expect(buildPath(catalog, profile).map(item => item.id))
         .toEqual(catalog.slice(0, 5).map(item => item.id))
     }
+  })
+  it.each([
+    ['new', ['new', 'basics', 'intermediate'], []],
+    ['basics', ['basics', 'intermediate'], ['new']],
+    ['intermediate', ['intermediate'], ['new', 'basics']],
+  ] as const)('starts at the %s learner level and separates other levels', (level, expected, refreshers) => {
+    const learner = { ...profile, level }
+    const catalog = [entry('new'), entry('basics', { level: 'basics' }),
+      entry('intermediate', { level: 'intermediate' }), entry('unknown', { level: null }),
+      entry('draft', { level: null, lastVerified: null })]
+    expect(buildPath(catalog, learner).map(course => course.id)).toEqual(expected)
+    expect(supplementaryCourses(catalog, learner).refreshers.map(course => course.id).sort()).toEqual([...refreshers].sort())
+    expect(supplementaryCourses(catalog, learner)).not.toHaveProperty('unknown')
+  })
+  it('orders by score within each eligible level and does not pad a short path', () => {
+    const learner = { ...profile, level: 'basics' as const }
+    const catalog = [entry('low', { level: 'basics', cost: 'paid' }), entry('high', { level: 'basics' }),
+      entry('refresher'), entry('unknown', { level: null })]
+    expect(buildPath(catalog, learner).map(course => course.id)).toEqual(['high', 'low'])
+    expect(buildPath(catalog, { ...learner, level: 'intermediate' })).toEqual([])
+  })
+  it('limits relevant verified refreshers to five highest scores with stable ties', () => {
+    const learner = { ...profile, level: 'basics' as const }
+    const catalog = [entry('lower-score', { cost: 'paid' }),
+      ...Array.from({ length: 7 }, (_, i) => entry('match-' + i)),
+      entry('unrelated', { goals: ['aws-cloud'] }), entry('draft', { lastVerified: null }),
+      entry('unknown', { level: null }), entry('same-level', { level: 'basics' })]
+    expect(supplementaryCourses(catalog, learner).refreshers.map(course => course.id))
+      .toEqual(['match-0', 'match-1', 'match-2', 'match-3', 'match-4'])
+    expect(supplementaryCourses(catalog, profile).refreshers).toEqual([])
   })
 })

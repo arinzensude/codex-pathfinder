@@ -43,7 +43,11 @@ minutes otherwise (for example, `1 hr 30 min`). Unknown details remain labelled.
 
 Choose **Save on this device** to store the profile and complete selected course
 snapshots in localStorage (`pathfinder.savedPath.v1`) and open the saved screen.
-On startup, a valid saved path opens directly, even if the catalog has changed.
+On startup, a valid saved path opens directly. Older saves are rebuilt against
+the revised level rule using their snapshots and the current offline catalog.
+New saves include at most five relevant refresher snapshots and exclude
+unknown-level courses, preserving recommendations offline without relying on
+later catalog additions. Older saves are normalized to these rules on restore.
 Malformed saved data is ignored; failed writes show an error without confirming
 a save. The saved screen includes a clearly labelled sample nudge preview.
 
@@ -91,8 +95,18 @@ data, and any weight with plenty. Known free/paid costs fit a can-pay budget;
 unknown level, hours, or cost earns zero for that factor. Scores below 50 receive
 a caution note. Device and motivation do not add scoring factors.
 
-`buildPath(catalog, profile)` selects up to five verified entries by score, then
-orders them new → basics → intermediate → unknown level. Equal scores retain
-catalog order. Poor fit never excludes a verified course from consideration;
-unverified entries remain excluded as required by AGENTS.md. A catalog with
-fewer than three verified entries returns only those available, without padding.
+`buildPath(catalog, profile)` selects the top five verified courses with a known
+level at or above the learner's level by score, then orders by ascending level
+and descending score within each level. Basics learners start with basics;
+intermediate learners receive intermediate courses. Equal scores retain catalog
+order. Fewer than three eligible entries produce a shortage message, without
+padding with lower or unknown levels.
+
+`supplementaryCourses` selects the five highest-scoring verified courses below
+the learner's level that match their selected goal as **Optional refreshers**.
+Both screens offer this expandable section only when courses qualify; new-level
+learners have none. Unknown-level courses are excluded from recommendations but
+kept in the catalog. Course cards show localized levels immediately before last
+verified, and a short explanation describes the main path ordering. Saving is
+supported when only refreshers are available; no step-1 nudge is shown unless
+the main path contains a course.

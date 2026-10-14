@@ -53,17 +53,26 @@ export function scoreCourse(course: Course, profile: LearnerProfile): CourseScor
   return { score, reasons }
 }
 
-/** Select the best five verified entries, or all available when fewer exist.
- * Ties retain catalog order; unknown levels follow known levels.
- * Fit never removes a verified entry from consideration.
+/** Select the best five verified entries at or above the learner's level.
+ * Then order by level and descending score; ties retain catalog order.
+ * Relevant lower levels are available as optional refreshers.
  */
 export function buildPath(catalog: readonly Course[], profile: LearnerProfile): Course[] {
   const levelRank = (course: Course) => course.level === null ? levels.length : levels.indexOf(course.level)
   return catalog
-    .filter(course => course.lastVerified !== null)
+    .filter(course => course.lastVerified !== null && course.level !== null && levelRank(course) >= levels.indexOf(profile.level))
     .map((course, index) => ({ course, index, score: scoreCourse(course, profile).score }))
     .sort((a, b) => b.score - a.score || a.index - b.index)
     .slice(0, 5)
     .sort((a, b) => levelRank(a.course) - levelRank(b.course) || b.score - a.score || a.index - b.index)
     .map(({ course }) => course)
+}
+
+export function supplementaryCourses(catalog: readonly Course[], profile: LearnerProfile) {
+  const verified = catalog.filter(course => course.lastVerified !== null)
+  const ranked = (courses: Course[]) => courses.map((course, index) => ({ course, index, score: scoreCourse(course, profile).score }))
+    .sort((a, b) => b.score - a.score || a.index - b.index).map(({ course }) => course)
+  return {
+    refreshers: ranked(verified.filter(course => course.level !== null && course.goals.includes(profile.goal) && levels.indexOf(course.level) < levels.indexOf(profile.level))).slice(0, 5),
+  }
 }

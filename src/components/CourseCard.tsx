@@ -3,7 +3,7 @@ import { formatDuration } from '../lib/duration'
 import { scoreCourse } from '../lib/score'
 import type { Course, LearnerProfile } from '../types'
 
-export default function CourseCard({ course, profile, number }: { course: Course; profile: LearnerProfile; number: number }) {
+export default function CourseCard({ course, profile, number }: { course: Course; profile: LearnerProfile; number?: number }) {
   const t = (key: string) => translate(key, profile.language)
   const { score, reasons } = scoreCourse(course, profile)
   const details = [
@@ -11,10 +11,11 @@ export default function CourseCard({ course, profile, number }: { course: Course
     ['course.cost', course.cost === null ? t('course.unknown') : t('cost.' + course.cost)],
     ['course.data', t('weight.' + course.dataWeight)],
     ['course.language', t('language.' + course.language)],
+    ['course.level', course.level === null ? t('course.unknown') : t('courseLevel.' + course.level)],
     ['course.verified', course.lastVerified ?? t('course.unknown')],
   ]
   return <li className="min-w-0 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-    <p className="mb-2 text-sm font-bold text-teal-800">{translate('path.step', profile.language, { number })}</p>
+    {number !== undefined && <p className="mb-2 text-sm font-bold text-teal-800">{translate('path.step', profile.language, { number })}</p>}
     <h2 className="break-words text-xl font-semibold">{course.title}</h2>
     <p className="mt-1 break-words text-slate-600">{course.provider}</p>
     <a href={course.url} target="_blank" rel="noopener noreferrer" className="my-3 inline-flex min-h-11 items-center font-semibold text-teal-800 underline underline-offset-4">{t('course.source')}</a>
