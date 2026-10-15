@@ -85,6 +85,19 @@ describe('scoreCourse', () => {
 })
 
 describe('buildPath', () => {
+  it('starts a beginner data-analysis path with a Python foundation in step 1 or 2', () => {
+    const learner: LearnerProfile = { ...profile, goal: 'data-analysis', level: 'new',
+      hoursPerWeek: 4, data: 'very_limited', budget: 'free_only', language: 'en' }
+    const path = buildPath(catalog as Course[], learner)
+    const pythonIds = ['kaggle-python', 'kaggle-intro-programming', 'py4e', 'fr-python-bases']
+    expect(path.length).toBeGreaterThanOrEqual(2)
+    expect(path.slice(0, 2).some(course => pythonIds.includes(course.id))).toBe(true)
+    expect(path.every(course => course.goals.includes(learner.goal))).toBe(true)
+    for (const id of pythonIds) {
+      const course = catalog.find(course => course.id === id)!
+      expect(course.goals).toEqual(expect.arrayContaining(['python-programming', 'data-analysis', 'machine-learning']))
+    }
+  })
   const entry = (id: string, patch: Partial<Course> = {}): Course => ({ ...course, id, ...patch })
   it('selects the top five by score before ordering by level', () => {
     const catalog = [entry('excluded', { goals: [], level: 'intermediate', hours: 100 }),

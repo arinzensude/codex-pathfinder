@@ -5,7 +5,9 @@
     "provider": "Kaggle",
     "url": "https://www.kaggle.com/learn/intro-to-programming/course",
     "goals": [
-      "python-programming"
+      "python-programming",
+      "data-analysis",
+      "machine-learning"
     ],
     "level": "new",
     "hours": 5,
@@ -22,7 +24,9 @@
     "provider": "Kaggle",
     "url": "https://www.kaggle.com/learn/python",
     "goals": [
-      "python-programming"
+      "python-programming",
+      "data-analysis",
+      "machine-learning"
     ],
     "level": "basics",
     "hours": 5,
@@ -226,7 +230,9 @@
     "provider": "Charles Severance / University of Michigan",
     "url": "https://www.py4e.com/",
     "goals": [
-      "python-programming"
+      "python-programming",
+      "data-analysis",
+      "machine-learning"
     ],
     "level": null,
     "hours": null,
@@ -243,7 +249,9 @@
     "provider": "OpenClassrooms",
     "url": "https://openclassrooms.com/fr/courses/7168871-apprenez-les-bases-du-langage-python",
     "goals": [
-      "python-programming"
+      "python-programming",
+      "data-analysis",
+      "machine-learning"
     ],
     "level": "new",
     "hours": 6,
