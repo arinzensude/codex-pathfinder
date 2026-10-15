@@ -101,9 +101,12 @@ reload. All screens, scoring, language switching, saving and restored paths work
 offline. Course source websites require internet access. Vite dev mode does not
 register a service worker.
 
-`npm run test:pwa` builds and runs the 360px browser test in installed Microsoft
-Edge. It disables networking after the first load, reloads, fetches the cached
-catalog/icons, completes all six screens in English and French, and restores a
+Run `npx playwright install chromium` once to install the default test browser.
+`npm run test:pwa` builds and runs the 360px browser test in Playwright's bundled
+Chromium. Set `PW_CHANNEL=msedge` to test in installed Microsoft Edge instead
+(PowerShell: `$env:PW_CHANNEL='msedge'`). It disables networking after the first
+load, reloads, fetches the cached catalog/icons, completes all six screens in
+English and French, and restores a
 saved path after an offline reload. Screenshots go to ignored `test-results/`.
 Run `npm run icons` to regenerate the code-drawn PNG icons.
 
