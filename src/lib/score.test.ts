@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { translate } from '../i18n'
 import type { Course, LearnerProfile } from '../types'
 import { buildPath, scoreCourse, supplementaryCourses } from './score'
+import catalog from '../data/catalog.json'
 
 const profile: LearnerProfile = {
   goal: 'python-programming', level: 'new', why: 'Automate tasks', hoursPerWeek: 4,
@@ -90,17 +91,17 @@ describe('buildPath', () => {
       entry('intermediate', { level: 'intermediate' }), entry('basics', { level: 'basics' }),
       entry('new-a'), entry('new-b'), entry('unknown', { level: null })]
     expect(buildPath(catalog, profile).map(item => item.id))
-      .toEqual(['new-a', 'new-b', 'basics', 'intermediate', 'excluded'])
+      .toEqual(['new-a', 'new-b', 'basics', 'intermediate'])
     expect(catalog.map(item => item.id)).toEqual(['excluded', 'intermediate', 'basics', 'new-a', 'new-b', 'unknown'])
   })
   it('returns poor matches with caution reasons when no course fits well', () => {
     const catalog = ['a', 'b', 'c'].map(id => entry(id, {
-      goals: ['aws-cloud'], level: 'intermediate', hours: 100,
+      goals: ['python-programming'], level: 'intermediate', hours: 100,
       cost: 'paid', dataWeight: 'high', language: 'fr',
     }))
     expect(buildPath(catalog, profile)).toEqual(catalog)
     for (const item of buildPath(catalog, profile)) {
-      expect(scoreCourse(item, profile).score).toBe(0)
+      expect(scoreCourse(item, profile).score).toBe(35)
       expect(scoreCourse(item, profile).reasons).toContain('May be harder for you.')
     }
   })
@@ -145,5 +146,17 @@ describe('buildPath', () => {
     expect(supplementaryCourses(catalog, learner).refreshers.map(course => course.id))
       .toEqual(['match-0', 'match-1', 'match-2', 'match-3', 'match-4'])
     expect(supplementaryCourses(catalog, profile).refreshers).toEqual([])
+  })
+  it.each([
+    ['python-programming', 'intermediate'], ['aws-cloud', 'basics'],
+  ] as const)('keeps the %s %s path strictly on goal', (goal, level) => {
+    const learner = { ...profile, goal, level }
+    const path = buildPath(catalog as Course[], learner)
+    expect(path.length).toBeGreaterThan(0)
+    expect(path.every(course => course.goals.includes(goal))).toBe(true)
+    const fixtures = [entry('off-goal', { goals: ['data-analysis'], level }),
+      entry('on-goal', { goals: [goal], level }), entry('multi-goal', { goals: ['data-analysis', goal], level })]
+    expect(buildPath(fixtures, learner).map(course => course.id)).toEqual(['on-goal', 'multi-goal'])
+    expect(buildPath(fixtures.slice(0, 1), learner)).toEqual([])
   })
 })

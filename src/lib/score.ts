@@ -60,7 +60,7 @@ export function scoreCourse(course: Course, profile: LearnerProfile): CourseScor
 export function buildPath(catalog: readonly Course[], profile: LearnerProfile): Course[] {
   const levelRank = (course: Course) => course.level === null ? levels.length : levels.indexOf(course.level)
   return catalog
-    .filter(course => course.lastVerified !== null && course.level !== null && levelRank(course) >= levels.indexOf(profile.level))
+    .filter(course => course.lastVerified !== null && course.goals.includes(profile.goal) && course.level !== null && levelRank(course) >= levels.indexOf(profile.level))
     .map((course, index) => ({ course, index, score: scoreCourse(course, profile).score }))
     .sort((a, b) => b.score - a.score || a.index - b.index)
     .slice(0, 5)

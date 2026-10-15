@@ -62,7 +62,9 @@ failures show a translated message while keeping the toggle usable. Answers
 are held in one profile object and preserved when navigating back. Goals come
 from unique catalog goal tags. Weekly hours must be between 0.5 and 168.
 The path screen pins the learner's motivation above numbered course cards with
-fit reasons and source links. Durations use minutes below an hour and hours plus
+fit reasons and source links. Cards show up to two positive reasons alongside
+all level cautions, mismatches and unknown details; **More reasons** expands the
+remaining positives. The fit score stays visible. Durations use minutes below an hour and hours plus
 minutes otherwise (for example, `1 hr 30 min`). Unknown details remain labelled.
 
 Choose **Save on this device** to store the profile and complete selected course
@@ -123,8 +125,8 @@ data, and any weight with plenty. Known free/paid costs fit a can-pay budget;
 unknown level, hours, or cost earns zero for that factor. Scores below 50 receive
 a caution note. Device and motivation do not add scoring factors.
 
-`buildPath(catalog, profile)` selects the top five verified courses with a known
-level at or above the learner's level by score, then orders by ascending level
+`buildPath(catalog, profile)` selects the top five verified courses matching the
+learner's goal with a known level at or above the learner's level by score, then orders by ascending level
 and descending score within each level. Basics learners start with basics;
 intermediate learners receive intermediate courses. Equal scores retain catalog
 order. Fewer than three eligible entries produce a shortage message, without

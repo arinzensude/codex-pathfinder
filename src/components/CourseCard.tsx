@@ -8,11 +8,20 @@ export default function CourseCard({ course, profile, number }: { course: Course
   const t = (key: string) => translate(key, profile.language)
   const titleId = useId()
   const { score, reasons } = scoreCourse(course, profile)
+  const positiveReasons = new Set(['goalMatch', 'levelMatch', 'timeMatch', 'dataMatch', 'costMatch', 'languageMatch']
+    .map(key => t('score.' + key)))
+  let positiveCount = 0
+  const visibleReasons: string[] = []
+  const moreReasons: string[] = []
+  for (const reason of reasons) {
+    if (positiveReasons.has(reason) && ++positiveCount > 2) moreReasons.push(reason)
+    else visibleReasons.push(reason)
+  }
   const details = [
     ['course.duration', formatDuration(course.hours, profile.language)],
     ['course.cost', course.cost === null ? t('course.unknown') : t('cost.' + course.cost)],
     ['course.data', t('weight.' + course.dataWeight)],
-    ['course.language', t('language.' + course.language)],
+    ['course.language', t('courseLanguage.' + course.language)],
     ['course.level', course.level === null ? t('course.unknown') : t('courseLevel.' + course.level)],
     ['course.verified', course.lastVerified ?? t('course.unknown')],
   ]
@@ -28,7 +37,11 @@ export default function CourseCard({ course, profile, number }: { course: Course
     <div className="mt-5 border-t border-slate-100 pt-4">
       <h3 className="font-semibold">{t('course.reasons')}</h3>
       <p className="my-2 text-sm text-teal-800">{translate('course.score', profile.language, { score })}</p>
-      <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed text-slate-600">{reasons.map(reason => <li key={reason}>{reason}</li>)}</ul>
+      <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed text-slate-600">{visibleReasons.map(reason => <li key={reason}>{reason}</li>)}</ul>
+      {moreReasons.length > 0 && <details className="mt-3">
+        <summary className="min-h-11 cursor-pointer content-center text-sm font-semibold text-teal-800">{t('course.moreReasons')}</summary>
+        <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-relaxed text-slate-600">{moreReasons.map(reason => <li key={reason}>{reason}</li>)}</ul>
+      </details>}
     </div>
   </li>
 }

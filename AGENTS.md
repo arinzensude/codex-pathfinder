@@ -28,7 +28,7 @@ goal match 35, level match 20 (one level away = half), time fit 15,
 data fit 10, cost fit 10, language 10.
 Return the score plus a list of human-readable reasons.
 Low scores alone never exclude an otherwise eligible course; low scorers get a "may be harder for you" note.
-Path = top 3–5 verified courses at or above the learner’s level, ordered from their current level upward, then by score within each level.
+Path = up to five verified courses whose goals include the selected goal, at or above the learner’s level, ordered from their current level upward, then by score within each level. Return fewer than three when fewer qualify; never pad with off-goal courses.
 Optional refreshers must be verified, match the selected goal, and be below the learner’s level. Show only the five highest-scoring refreshers; show fewer when fewer qualify, and hide the section when none qualify.
 Exclude unknown-level courses from recommendation screens and saved recommendations. Keep their catalog records unchanged for later verification.
 Show the course level immediately before last verified, and explain the main path’s ordering. Apply these rules to restored saves as well as new paths.
