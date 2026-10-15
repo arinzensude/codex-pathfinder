@@ -98,7 +98,7 @@ describe('buildPath', () => {
     const path = buildPath(catalog as Course[], learner)
     expect(path).toHaveLength(5)
     expect(path.slice(0, 2).map(course => course.id)).toEqual(['fr-python-bases', 'fr-python-analysis'])
-    const eligibleFrench = catalog.filter(course => course.lastVerified !== null && course.level !== null &&
+    const eligibleFrench = catalog.filter(course => course.lastVerified !== null && (course.level === 'new' || course.level === 'basics') &&
       course.goals.includes('data-analysis') && course.language === 'fr')
     expect(path.filter(course => course.language === 'fr')).toHaveLength(Math.min(5, eligibleFrench.length))
     expect(path.every(course => course.goals.includes('data-analysis'))).toBe(true)
@@ -178,12 +178,30 @@ describe('buildPath', () => {
       .toEqual(['match-0', 'match-1', 'match-2', 'match-3', 'match-4'])
     expect(supplementaryCourses(catalog, profile).refreshers).toEqual([])
   })
-  it('selects preferred-language courses first, fills by score, then preserves level ordering', () => {
-    const catalog = [entry('preferred', { level: 'intermediate', hours: null, cost: 'paid', dataWeight: 'high' }),
+  it('selects preferred-language courses within one level first, fills by score, then preserves level ordering', () => {
+    const catalog = [entry('preferred', { level: 'basics', hours: null, cost: 'paid', dataWeight: 'high' }),
       ...Array.from({ length: 5 }, (_, i) => entry('fallback-' + i, { language: 'fr', hours: i === 0 ? 100 : 1 }))]
     const path = buildPath(catalog, profile)
     expect(path.map(course => course.id)).toEqual(['fallback-1', 'fallback-2', 'fallback-3', 'fallback-4', 'preferred'])
     expect(buildPath(catalog.slice(0, 1), profile)).toEqual(catalog.slice(0, 1))
+  })
+  it('keeps intermediate courses out of the French beginner data-analysis path when five closer courses exist', () => {
+    const learner: LearnerProfile = { ...profile, goal: 'data-analysis', language: 'fr' }
+    const path = buildPath(catalog as Course[], learner)
+    expect(path).toHaveLength(5)
+    expect(path.every(course => course.level === 'new' || course.level === 'basics')).toBe(true)
+    const closer = Array.from({ length: 5 }, (_, i) => entry('closer-' + i, {
+      goals: ['data-analysis'], language: 'en', level: i % 2 ? 'basics' : 'new', hours: null, cost: null,
+    }))
+    const distant = entry('distant-french', { goals: ['data-analysis'], language: 'fr', level: 'intermediate' })
+    expect(buildPath([distant, ...closer], learner).map(course => course.id)).not.toContain('distant-french')
+    expect(buildPath([distant, ...closer.slice(0, 4)], learner).map(course => course.id)).toContain('distant-french')
+    const distantFrenchLowScore = { ...distant, hours: null, cost: null }
+    const distantEnglish = { ...distant, id: 'distant-english', language: 'en' as const }
+    expect(buildPath([...closer.slice(0, 4), distantFrenchLowScore, distantEnglish], learner).map(course => course.id))
+      .toContain('distant-english')
+    expect(buildPath([...closer.slice(0, 4), distantFrenchLowScore, distantEnglish], learner).map(course => course.id))
+      .not.toContain('distant-french')
   })
   it.each([
     ['python-programming', 'intermediate'], ['aws-cloud', 'basics'],

@@ -130,8 +130,9 @@ a caution note. Device and motivation do not add scoring factors.
 
 `buildPath(catalog, profile)` selects the top five verified courses matching the
 learner's goal with a known level at or above the learner's level. It selects
-courses in the learner's language by score first, then fills remaining slots
-with other-language courses by score. It orders the selected courses by ascending level
+courses at the learner's level or one level above first, preferring the learner's
+language and then score within that group. Courses two or more levels above only
+fill remaining slots, ranked by score regardless of language. It orders the selected courses by ascending level
 and descending score within each level. Basics learners start with basics;
 intermediate learners receive intermediate courses. Equal scores retain catalog
 order. Fewer than three eligible entries produce a shortage message, without
