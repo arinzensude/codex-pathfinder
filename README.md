@@ -129,7 +129,9 @@ unknown level, hours, or cost earns zero for that factor. Scores below 50 receiv
 a caution note. Device and motivation do not add scoring factors.
 
 `buildPath(catalog, profile)` selects the top five verified courses matching the
-learner's goal with a known level at or above the learner's level by score, then orders by ascending level
+learner's goal with a known level at or above the learner's level. It selects
+courses in the learner's language by score first, then fills remaining slots
+with other-language courses by score. It orders the selected courses by ascending level
 and descending score within each level. Basics learners start with basics;
 intermediate learners receive intermediate courses. Equal scores retain catalog
 order. Fewer than three eligible entries produce a shortage message, without

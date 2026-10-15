@@ -53,7 +53,7 @@ export function scoreCourse(course: Course, profile: LearnerProfile): CourseScor
   return { score, reasons }
 }
 
-/** Select the best five verified entries at or above the learner's level.
+/** Prefer the learner's language among verified, on-goal courses at or above their level.
  * Then order by level and descending score; ties retain catalog order.
  * Relevant lower levels are available as optional refreshers.
  */
@@ -62,7 +62,7 @@ export function buildPath(catalog: readonly Course[], profile: LearnerProfile): 
   return catalog
     .filter(course => course.lastVerified !== null && course.goals.includes(profile.goal) && course.level !== null && levelRank(course) >= levels.indexOf(profile.level))
     .map((course, index) => ({ course, index, score: scoreCourse(course, profile).score }))
-    .sort((a, b) => b.score - a.score || a.index - b.index)
+    .sort((a, b) => Number(b.course.language === profile.language) - Number(a.course.language === profile.language) || b.score - a.score || a.index - b.index)
     .slice(0, 5)
     .sort((a, b) => levelRank(a.course) - levelRank(b.course) || b.score - a.score || a.index - b.index)
     .map(({ course }) => course)

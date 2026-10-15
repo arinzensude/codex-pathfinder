@@ -85,6 +85,24 @@ describe('scoreCourse', () => {
 })
 
 describe('buildPath', () => {
+  it('keeps the English beginner data-analysis path entirely in English when five qualify', () => {
+    const learner: LearnerProfile = { ...profile, goal: 'data-analysis', level: 'new', hoursPerWeek: 4,
+      data: 'very_limited', budget: 'free_only', language: 'en' }
+    const path = buildPath(catalog as Course[], learner)
+    expect(path).toHaveLength(5)
+    expect(path.every(course => course.language === 'en')).toBe(true)
+  })
+  it('starts the French beginner data-analysis path with French Python foundations', () => {
+    const learner: LearnerProfile = { ...profile, goal: 'data-analysis', level: 'new', hoursPerWeek: 4,
+      data: 'very_limited', budget: 'free_only', language: 'fr' }
+    const path = buildPath(catalog as Course[], learner)
+    expect(path).toHaveLength(5)
+    expect(path.slice(0, 2).map(course => course.id)).toEqual(['fr-python-bases', 'fr-python-analysis'])
+    const eligibleFrench = catalog.filter(course => course.lastVerified !== null && course.level !== null &&
+      course.goals.includes('data-analysis') && course.language === 'fr')
+    expect(path.filter(course => course.language === 'fr')).toHaveLength(Math.min(5, eligibleFrench.length))
+    expect(path.every(course => course.goals.includes('data-analysis'))).toBe(true)
+  })
   it('starts a beginner data-analysis path with a Python foundation in step 1 or 2', () => {
     const learner: LearnerProfile = { ...profile, goal: 'data-analysis', level: 'new',
       hoursPerWeek: 4, data: 'very_limited', budget: 'free_only', language: 'en' }
@@ -159,6 +177,13 @@ describe('buildPath', () => {
     expect(supplementaryCourses(catalog, learner).refreshers.map(course => course.id))
       .toEqual(['match-0', 'match-1', 'match-2', 'match-3', 'match-4'])
     expect(supplementaryCourses(catalog, profile).refreshers).toEqual([])
+  })
+  it('selects preferred-language courses first, fills by score, then preserves level ordering', () => {
+    const catalog = [entry('preferred', { level: 'intermediate', hours: null, cost: 'paid', dataWeight: 'high' }),
+      ...Array.from({ length: 5 }, (_, i) => entry('fallback-' + i, { language: 'fr', hours: i === 0 ? 100 : 1 }))]
+    const path = buildPath(catalog, profile)
+    expect(path.map(course => course.id)).toEqual(['fallback-1', 'fallback-2', 'fallback-3', 'fallback-4', 'preferred'])
+    expect(buildPath(catalog.slice(0, 1), profile)).toEqual(catalog.slice(0, 1))
   })
   it.each([
     ['python-programming', 'intermediate'], ['aws-cloud', 'basics'],
